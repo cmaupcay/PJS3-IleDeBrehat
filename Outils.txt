@@ -1,0 +1,9 @@
+Mission 1 :
+	Figma => Design
+	Bootstrap 5 => CSS et JS
+
+Mission 2 :
+	Excel => Analyse
+	Chart.js => Graphique
+			-> sur le site
+	
