@@ -1,7 +1,7 @@
 Mission 1 :
 	Figma => Design
 	Boostrap 5 => CSS et JS
-			+ libarairie étendue MDBoostrap
+			+ libarairie étendue MDBoostrap : mdbootstrap.com
 
 Mission 2 :
 	Excel => Analyse
