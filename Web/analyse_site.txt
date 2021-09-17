@@ -9,3 +9,8 @@
 	- redondances des elements --> on retrouve les memes dans la navbar, boutons, caroussel 
 	- certaines pages sont plutot vide et pourraient etre regroupées
 	- CCL : site un peu brouillon, sans reel cohérence et avec beaucoup de redondances = il faut coder un site plus simple, esthétique, et + user friendly
+
+
+Sites similaires intéréssants pour avoir des idées :
+_ tps://www.ile-oleron-marennes.com/
+_ 
