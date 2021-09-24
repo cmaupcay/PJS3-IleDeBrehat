@@ -5,6 +5,7 @@
 
 - : - mauvaise qualité des images de fond (accueil)
 	- plusieurs navbar, une en haut de la page une en bas de la page = peu pratique pour l'utilisateur
+	-> solution : delete la navbar en bas
 	- pas de cohérence dans les interactions avec les boutons principaux --> pop-up, ancres, redirection,...
 	- redondances des elements --> on retrouve les memes dans la navbar, boutons, caroussel 
 	- certaines pages sont plutot vide et pourraient etre regroupées
