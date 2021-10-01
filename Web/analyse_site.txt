@@ -8,6 +8,8 @@
 	- pas de cohérence dans les interactions avec les boutons principaux --> pop-up, ancres, redirection,...
 	- redondances des elements --> on retrouve les memes dans la navbar, boutons, caroussel 
 	- certaines pages sont plutot vide et pourraient etre regroupées
+	- Couleur de fond de "l'agenda" pas cohérente avec la charte graphique globale du site.
+	- Site pas assez moderne.
 	- CCL : site un peu brouillon, sans reel cohérence et avec beaucoup de redondances = il faut coder un site plus simple, esthétique, et + user friendly
 
 
