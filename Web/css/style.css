@@ -1,0 +1,28 @@
+@import 'couleurs.css';
+
+/* Barre de navigation */
+nav.navbar
+{
+    box-shadow: none;
+}
+nav.navbar div.container-fluid
+{
+    padding-left: 0;
+}
+nav.navbar button.navbar-toggler i
+{
+    color: var(--idb-prem);
+    font-size: 1.35rem;
+}
+nav.navbar div#pre-navigation
+{
+    position: absolute;
+    margin-left: 0;
+    top: 0;
+}
+nav.navbar div#pre-navigation div#navigation
+{
+    background-color: red;
+    width: 30%;
+    height: 100vh;
+}
