@@ -19,50 +19,22 @@
     <!-- CSS personnel -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-  
-    <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" 
-          data-mdb-toggle="collapse" data-mdb-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Afficher/Masquer la navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div id="pre-navigation" class="container-fluid">
-          <div id="navigation" class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <button class="navbar-toggler" type="button" 
-                  data-mdb-toggle="collapse" data-mdb-target="#navigation"
-                  aria-controls="navigation" aria-expanded="false" aria-label="Afficher/Masquer la navigation"
-                >
-                  <i class="fas fa-bars"></i>
-                </button>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Lien 1</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Lien 2</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <body class="container-fluid">
 
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="text-center">
-          <h5>Ceci est une page modèle.</h5>
-        </div>
+    <nav id="navigation" class="d-flex flex-column flex-shrink-0 p-3 ferme">
+      <button onclick="ouverture('navigation')">=</button>
+    </nav>
+    <main id="page" class="d-flex">
+      <div class="text-center">
+        <h5>Ceci est une page modèle.</h5>
+        <button onclick="ouverture('navigation')">=</button>
       </div>
-    </div>
+    </main>
 
     <!-- MDB : JavaScript -->
     <script type="text/javascript" src="lib/mdb/mdb.min.js"></script>
     <!-- Scripts -->
+    <script type="text/javascript" src="js/action.js"></script>
     <script type="text/javascript">
 	
 	</script>

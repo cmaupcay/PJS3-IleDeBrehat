@@ -1,28 +1,37 @@
-@import 'couleurs.css';
+@import 'action.css';
 
-/* Barre de navigation */
-nav.navbar
+/* PRINCIPAL */
+body
 {
-    box-shadow: none;
+    margin: 0!important;
+    padding: 0!important;
 }
-nav.navbar div.container-fluid
-{
-    padding-left: 0;
-}
-nav.navbar button.navbar-toggler i
-{
-    color: var(--idb-prem);
-    font-size: 1.35rem;
-}
-nav.navbar div#pre-navigation
+
+/* NAVIGATION */
+nav#navigation
 {
     position: absolute;
-    margin-left: 0;
-    top: 0;
+    height: 100vh;
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
 }
-nav.navbar div#pre-navigation div#navigation
+nav#navigation.ferme
 {
-    background-color: red;
-    width: 30%;
+    width: 0px;
+    visibility: collapse;
+    transition: all 0.2s ease-out;
+}
+nav#navigation.ouvert
+{
+    width: 20%;
+    visibility: visible;
+    transition: all 0.2s ease-in;
+}
+
+/* PAGE */
+main#page
+{
+    background-color: var(--idb-fond);
+    color: var(--idb-texte);
     height: 100vh;
 }

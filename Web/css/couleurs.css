@@ -1,4 +1,7 @@
 :root
 {
-    --idb-prem: #4f4f4f;
+    --idb-fond: rgb(238, 238, 238);
+    --idb-texte: rgb(20, 20, 20);
+    --idb-nav-fond: rgb(32, 32, 32);
+    --idb-nav-texte: rgb(238, 238, 238);
 }
