@@ -12,3 +12,15 @@ function ouverture(id)
         objet.classList.add('ouvert');
     }
 }
+
+function obscursir(id)
+{
+    objet = document.getElementById(id);
+    document.classList.toggle('obscur');
+}
+
+function ouvrir_navigation()
+{
+    ouverture('navigation');
+    obscursir('page');
+}

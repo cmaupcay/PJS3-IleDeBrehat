@@ -4,3 +4,5 @@
 { width: 0%; }
 .ouvert
 { width: 100%; }
+.obscur
+{ filter: brightness(0.4);}
