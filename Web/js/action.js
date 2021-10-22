@@ -16,7 +16,9 @@ function ouverture(id)
 function obscursir(id)
 {
     objet = document.getElementById(id);
-    document.classList.toggle('obscur');
+    if (objet.classList.contains("obscur"))
+        objet.classList.remove("obscur");
+    else objet.classList.add("obscur");
 }
 
 function ouvrir_navigation()

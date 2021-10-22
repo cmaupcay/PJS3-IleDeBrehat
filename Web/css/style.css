@@ -11,6 +11,7 @@ body
 nav#navigation
 {
     position: absolute;
+    z-index: 2;
     height: 100vh;
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
@@ -19,13 +20,13 @@ nav#navigation.ferme
 {
     width: 0px;
     visibility: collapse;
-    transition: all 0.2s ease-out;
+    transition: all 0.14s ease-out;
 }
 nav#navigation.ouvert
 {
     width: 20%;
     visibility: visible;
-    transition: all 0.2s ease-in;
+    transition: all 0.14s ease-in;
 }
 
 /* PAGE */
@@ -34,4 +35,9 @@ main#page
     background-color: var(--idb-fond);
     color: var(--idb-texte);
     height: 100vh;
+    transition: all 0.2s ease-out;
+}
+main#page.obscur
+{
+    transition: all 0.2s ease-in;
 }
