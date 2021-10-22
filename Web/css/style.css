@@ -24,9 +24,26 @@ nav#navigation.ferme
 }
 nav#navigation.ouvert
 {
-    width: 20%;
+    width: 30%;
     visibility: visible;
     transition: all 0.14s ease-in;
+}
+nav#navigation.ouvert div.container-fluid
+{
+    opacity: 100%;
+    transition: all 0.1s ease-in;
+}
+nav#navigation.ferme div.container-fluid
+{ 
+    opacity: 0;
+    transition: all 0.1s ease-out;
+}
+nav#navigation div#entete button
+{
+    color: var(--idb-nav-texte);
+    font-size: 2rem;
+    box-shadow: none;
+    margin-top: -0.3rem;
 }
 
 /* PAGE */

@@ -21,9 +21,17 @@
   </head>
   <body class="container-fluid">
 
-    <nav id="navigation" class="d-flex flex-column flex-shrink-1 p-3 ferme">
-      <h2>Ile de Brehat</h2>
-      <button onclick="ouvrir_navigation()">=</button>
+    <nav id="navigation" class="d-flex flex-column flex-shrink-1 p-3 text-center ferme">
+      <div class="container-fluid">
+        <div id="entete" class="row">
+          <div class="col-10">
+              <figure class="figure">
+                <img src="img/logo+texte.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
+              </figure>
+          </div>
+          <button class="col-2 btn btn-floating" onclick="ouvrir_navigation()"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
     </nav>
 
     <main id="page" class="d-flex">
