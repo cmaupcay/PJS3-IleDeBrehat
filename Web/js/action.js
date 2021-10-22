@@ -1,15 +1,15 @@
-function ouverture(id)
+function ouverture(id, classe_o, classe_f)
 {
     objet = document.getElementById(id);
-    if (objet.classList.contains('ouvert'))
+    if (objet.classList.contains(classe_o))
     {
-        objet.classList.remove('ouvert');
-        objet.classList.add('ferme');
+        objet.classList.remove(classe_o);
+        objet.classList.add(classe_f);
     }
-    else if (objet.classList.contains('ferme'))
+    else if (objet.classList.contains(classe_f))
     {
-        objet.classList.remove('ferme');
-        objet.classList.add('ouvert');
+        objet.classList.remove(classe_f);
+        objet.classList.add(classe_o);
     }
 }
 
@@ -23,6 +23,9 @@ function obscursir(id)
 
 function ouvrir_navigation()
 {
-    ouverture('navigation');
+    ouverture('navigation', 'ouvert', 'ferme');
     obscursir('page');
 }
+
+function ouvrir_sous_menu(id)
+{ ouverture(id, 'ouvert-v', 'ferme-v'); }

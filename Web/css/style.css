@@ -7,6 +7,18 @@ body
     margin: 0!important;
     padding: 0!important;
 }
+button.btn
+{ 
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+    transition: all 0.2s ease-in;
+}
+button.btn:hover 
+{ 
+    background-color: var(--idb-nav-texte);
+    color: var(--idb-nav-fond);
+    transition: all 0.2s ease-out;
+}
 
 /* NAVIGATION */
 nav#navigation
@@ -39,7 +51,6 @@ nav#navigation.ferme div.container-fluid
 }
 nav#navigation div#entete button
 {
-    color: var(--idb-nav-texte);
     font-size: 2rem;
     box-shadow: none;
     overflow: visible;
