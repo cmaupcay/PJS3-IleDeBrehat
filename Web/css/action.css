@@ -1,8 +1,8 @@
 @import 'couleurs.css';
 
 .ferme
-{ width: 0%; }
+{ width: 0%; transition: all 0.14s ease-out; }
 .ouvert
-{ width: 100%; }
+{ width: 100%; transition: all 0.14s ease-in; }
 .obscur
-{ filter: brightness(0.4);}
+{ filter: brightness(0.4); transition: all 0.2s ease-in; }

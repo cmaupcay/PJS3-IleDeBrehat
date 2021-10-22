@@ -1,4 +1,5 @@
 @import 'action.css';
+@import 'responsive.css';
 
 /* PRINCIPAL */
 body
@@ -20,13 +21,11 @@ nav#navigation.ferme
 {
     width: 0px;
     visibility: collapse;
-    transition: all 0.14s ease-out;
 }
 nav#navigation.ouvert
 {
     width: 30%;
     visibility: visible;
-    transition: all 0.14s ease-in;
 }
 nav#navigation.ouvert div.container-fluid
 {
@@ -43,6 +42,7 @@ nav#navigation div#entete button
     color: var(--idb-nav-texte);
     font-size: 2rem;
     box-shadow: none;
+    overflow: visible;
     margin-top: -0.3rem;
 }
 
@@ -53,8 +53,4 @@ main#page
     color: var(--idb-texte);
     height: 100vh;
     transition: all 0.2s ease-out;
-}
-main#page.obscur
-{
-    transition: all 0.2s ease-in;
 }

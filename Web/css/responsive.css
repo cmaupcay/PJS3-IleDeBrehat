@@ -1,0 +1,6 @@
+@media (max-width: 992px) 
+{
+    nav#navigation.ouvert { width: 100%!important; }
+    nav#navigation div#entete button { font-size: 3rem!important; }
+    
+}
