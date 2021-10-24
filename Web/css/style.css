@@ -6,11 +6,13 @@ body
 {
     margin: 0!important;
     padding: 0!important;
+    overflow: hidden;
 }
 button.btn
 { 
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
+    min-width: none;
     transition: all 0.2s ease-in;
 }
 button.btn:hover 
@@ -30,23 +32,17 @@ nav#navigation
     color: var(--idb-nav-texte);
 }
 nav#navigation.ferme
-{
-    width: 0px;
-    visibility: collapse;
-}
+{ width: 0px; }
 nav#navigation.ouvert
-{
-    width: 30%;
-    visibility: visible;
-}
+{ width: 35%; }
 nav#navigation.ouvert div.container-fluid
 {
     opacity: 100%;
-    transition: all 0.1s ease-in;
+    transition: all 0.3s ease-in;
 }
 nav#navigation.ferme div.container-fluid
 { 
-    opacity: 0;
+    opacity: 0%;
     transition: all 0.1s ease-out;
 }
 nav#navigation div#entete button
@@ -56,6 +52,42 @@ nav#navigation div#entete button
     overflow: visible;
     margin-top: -0.3rem;
 }
+nav#navigation div#entete button:hover
+{ 
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+    font-size: 2.2rem;
+    margin-top: -0.4rem;
+}
+nav#navigation div#menu
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80vh;
+}
+nav#navigation div#menu button
+{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+nav#navigation div#menu div.sous-menu button
+{
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+}
+nav#navigation div#menu div.sous-menu.ouvert-v
+{
+    height: 70%;
+    opacity: 100%;
+}
+nav#navigation div#menu div.sous-menu.ferme-v
+{ 
+    height: 0;
+    opacity: 0%;
+    margin: 0!important;
+    visibility: hidden;
+}
+
 
 /* PAGE */
 main#page
@@ -64,4 +96,5 @@ main#page
     color: var(--idb-texte);
     height: 100vh;
     transition: all 0.2s ease-out;
+    overflow-x: auto;
 }

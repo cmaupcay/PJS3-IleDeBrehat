@@ -28,4 +28,4 @@ function ouvrir_navigation()
 }
 
 function ouvrir_sous_menu(id)
-{ ouverture(id, 'ouvert-v', 'ferme-v'); }
+{ ouverture('sm-' + id, 'ouvert-v', 'ferme-v'); }
