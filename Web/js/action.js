@@ -23,6 +23,7 @@ function obscursir(id)
 
 function ouvrir_navigation()
 {
+    ouverture('actions', 'nav-fermee', 'nav-ouverte');
     ouverture('navigation', 'ouvert', 'ferme');
     obscursir('page');
 }

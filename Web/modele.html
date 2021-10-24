@@ -75,35 +75,56 @@
 
     <main id="page" class="d-block">
       <header class="container-fluid p-2 mb-2">
-        <div class="row">
-          <div class="col-md-2 col-6">
-            <button id="menu" class="btn" onclick="ouvrir_navigation()">
-              <i class="fas fa-bars me-2"></i>
-              Menu
-            </button>  
-          </div>
-          <div id="logo" class="col-md-8 text-center">
-            <figure class="figure">
-              <img src="img/logo-ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
-            </figure>
-          </div>
-          <div class="col-md-2 col-6">
-            <button id="contact" class="btn" onclick="document.location = 'contact/'">
-              <i class="fas fa-phone-square-alt me-2"></i>
-              Contact
-            </button>  
+        <div id="actions" class="container-fluid nav-fermee">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <button id="menu" class="btn" onclick="ouvrir_navigation()">
+                <i class="fas fa-bars me-2"></i>
+                Menu
+              </button>  
+            </div>
+            <div id="logo" class="col-md-6" onclick="window.location = '/'">
+            </div>
+            <div class="col-md-3 col-6">
+              <button id="contact" class="btn" onclick="document.location = 'contact/'">
+                <i class="fas fa-phone-square-alt me-2"></i>
+                Contact
+              </button>  
+            </div>
           </div>
         </div>
-        <div id="logo-mobile" class="row mt-3">
-          <div class="col-12 text-center">
-            <figure class="figure">
-              <img src="img/logo-ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
-            </figure>
+        <div id="logo-bureau" class="row">
+          <div class="col-md-3 col-6"></div>
+              <div id="logo" class="col-md-6 text-center" onclick="window.location = '/'">
+                <figure class="figure">
+                  <img src="img/logo-ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
+                </figure>
+              </div>
+          <div class="col-md-3 col-6"></div>
+        </div>
+        <div id="logo-mobile" class="row mt-5">
+          <div class="col-12 text-center" onclick="window.location = '/'">
+              <figure class="figure">
+                <img src="img/logo-ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
+              </figure>
           </div>
         </div>
       </header>
       <div id="contenu" class="container-fluid">
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, est et in, modi eligendi illum iure vero eos nostrum atque voluptatibus, soluta ratione numquam aliquam! Nostrum, animi. Omnis, consectetur!</p>
       </div>
       <footer class="container-fluid text-center px-0 px-sm-2 px-md-5">
         <div class="container">
@@ -116,17 +137,23 @@
         <div class="row" id="logos">
           <div class="col-4" id="commune">
             <figure class="figure">
-              <img src="img/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
+              <a href="https://www.iledebrehat.fr/">
+                <img src="img/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
+              </a>
             </figure>
           </div>
           <div class="col-4" id="departement">
             <figure class="figure">
-              <img src="img/blason-departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
+              <a href="https://cotesdarmor.fr/">
+                <img src="img/blason-departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
+              </a>
             </figure>
           </div>
           <div class="col-4" id="region">
             <figure class="figure">
-              <img src="img/blason-region.svg" alt="Bretagne" class="figure-img img-fluid">
+              <a href="https://www.bretagne.bzh/">
+                <img src="img/blason-region.svg" alt="Bretagne" class="figure-img img-fluid">
+              </a>
             </figure>
           </div>
         </div>

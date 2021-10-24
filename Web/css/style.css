@@ -8,16 +8,18 @@ body
     margin: 0!important;
     padding: 0!important;
     overflow: hidden;
+    background-color: var(--idb-fond);
+    color: var(--idb-texte);
 }
 button.btn
-{ 
+{
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
     min-width: 100%!important;
     transition: all 0.2s ease-in;
 }
-button.btn:hover 
-{ 
+button.btn:hover
+{
     background-color: var(--idb-nav-texte);
     color: var(--idb-nav-fond);
     transition: all 0.2s ease-out;
@@ -42,7 +44,7 @@ nav#navigation.ouvert div.container-fluid
     transition: all 0.3s ease-in;
 }
 nav#navigation.ferme div.container-fluid
-{ 
+{
     opacity: 0%;
     transition: all 0.1s ease-out;
 }
@@ -54,7 +56,7 @@ nav#navigation div#entete button
     margin-top: -0.3rem;
 }
 nav#navigation div#entete button:hover
-{ 
+{
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
     font-size: 2.2rem;
@@ -78,7 +80,7 @@ nav#navigation div#menu::-webkit-scrollbar
 nav#navigation div#menu::-webkit-scrollbar-button
 { background-color: rgba(0,0,0,0); height: 0; }
 nav#navigation div#menu::-webkit-scrollbar-thumb
-{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; } 
+{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
 
 nav#navigation div#menu button
 {
@@ -96,7 +98,7 @@ nav#navigation div#menu div.sous-menu.ouvert-v
     margin-top: -0.15rem!important;
 }
 nav#navigation div#menu div.sous-menu.ferme-v
-{ 
+{
     height: 0;
     opacity: 0%;
     margin: 0!important;
@@ -117,7 +119,7 @@ nav#navigation div#pied a:hover
 }
 
 /* PAGE */
-header, footer { overflow-x: hidden; }
+main#page header, main#page footer { overflow-x: hidden; }
 main#page
 {
     background-color: var(--idb-fond);
@@ -127,17 +129,43 @@ main#page
     transition: all 0.2s ease-out;
 }
 
+/* EN TETE */
+main#page header div#actions
+{
+    position: absolute;
+    padding: 0.5rem 2.5rem 0 .5rem;
+}
+main#page header div#actions.nav-fermee
+{
+    top: 0;
+    transition: top 0.1s ease-in;
+}
+main#page header div#actions.nav-ouverte
+{
+    top: -4rem;
+    transition: top 0.1s ease-out;
+}
+main#page header div#logo, main#page header div#logo-mobile
+{
+    cursor: pointer;
+}
+
 /* PIED */
-footer 
+footer
 {
     color: var(--idb-nav-texte);
     background-color: var(--idb-nav-fond);
     font-size: 0.8rem;
-    padding: 1rem 0 1.5rem;
+    padding: 2rem 0 1.5rem;
 }
 footer div#logos div figure { margin: 0; }
 footer div#logos div figure img { width: 5rem; }
-footer div#logos div#departement figure img { width: 15rem; margin-top: 1rem; }
+footer div#logos div#departement figure img
+{
+    width: 15rem;
+    margin-top: 1rem;
+    filter: contrast(1.0);
+}
 footer div#credits
 {
     font-size: 0.7rem;
