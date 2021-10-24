@@ -7,6 +7,11 @@
         margin-top: 0!important;
     }
 }
+@media (min-width: 992px)
+{
+    main#page header div#logo-mobile { display: none; }
+}
+
 @media (max-width: 768px)
 {
     nav#navigation.ouvert { width: 100%!important; }
@@ -15,5 +20,5 @@
         font-size: 2.5rem!important;
         margin-top: -0.6rem!important;
     }
-    
+    main#page header div#logo { display: none; }   
 }

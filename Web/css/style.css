@@ -62,10 +62,11 @@ nav#navigation div#entete button:hover
 }
 nav#navigation div#menu
 {
+    width: 100%;
+    height: 77vh;
     margin: 0.3rem 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 80vh;
     scrollbar-color: var(--idb-nav-texte) rgba(0,0,0,0);
     scrollbar-width: thin;
 }
@@ -114,8 +115,6 @@ nav#navigation div#pied a:hover
     font-size: 2.2rem;
     transition: all 0.2s ease-out;
 }
-
-
 
 /* PAGE */
 main#page
