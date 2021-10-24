@@ -3,6 +3,9 @@
 
 /* PRINCIPAL */
 * { user-select: none; }
+p, span, a,
+h1, h2, h3, h4, h5, h6
+{ user-select: text; }
 body
 {
     margin: 0!important;
@@ -118,6 +121,17 @@ nav#navigation div#pied a:hover
     transition: all 0.2s ease-out;
 }
 
+/* FOND */
+div#fond
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;    
+    background-image: url('../img/fond.jpg');
+    background-position: center;
+}
+
 /* PAGE */
 main#page header, main#page footer { overflow-x: hidden; }
 main#page
@@ -127,6 +141,36 @@ main#page
     height: 100vh;
     overflow: auto;
     transition: all 0.2s ease-out;
+    scrollbar-color: var(--idb-nav-texte) var(--idb-nav-fond);
+    scrollbar-width: thin;
+}
+main#page::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background-color: var(--idb-nav-fond);
+}
+main#page::-webkit-scrollbar-button
+{ background-color: var(--idb-nav-fond); height: 0; }
+main#page::-webkit-scrollbar-thumb
+{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
+
+/* UNE */
+main#page div#une
+{
+    min-height: 5rem;
+}
+main#page div#une div#menu
+{
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    
+}
+
+/* CONTENU */
+main#page div#contenu
+{
+    padding: 1rem 1.5rem 2.5rem 3rem;
 }
 
 /* EN TETE */
@@ -146,9 +190,10 @@ main#page header div#actions.nav-ouverte
     transition: top 0.1s ease-out;
 }
 main#page header div#logo, main#page header div#logo-mobile
-{
-    cursor: pointer;
-}
+{ cursor: pointer; }
+main#page header div#logo img { width: 12rem; }
+main#page header div#logo-mobile img {width: 14rem;}
+main#page header div#logo-mobile { margin-top: 4.5rem; }
 
 /* PIED */
 footer
@@ -159,7 +204,16 @@ footer
     padding: 2rem 0 1.5rem;
 }
 footer div#logos div figure { margin: 0; }
-footer div#logos div figure img { width: 5rem; }
+footer div#logos div figure img 
+{
+    width: 5rem;
+    transition: all 0.2s ease-in;
+}
+footer div#logos div figure:hover img 
+{
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+}
 footer div#logos div#departement figure img
 {
     width: 15rem;

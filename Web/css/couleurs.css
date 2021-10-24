@@ -5,3 +5,11 @@
     --idb-nav-fond: rgb(32, 32, 32);
     --idb-nav-texte: rgb(238, 238, 238);
 }
+
+.degrade-fond
+{
+    background: var(--idb-fond);
+    background: linear-gradient(0deg, var(--idb-fond) 0%, var(--idb-fond) 21%, rgba(255,255,255,0) 100%)!important;
+}
+.plein { background-color: var(--idb-fond)!important; }
+.vide { background-color: rgba(255,255,255,0)!important; }
