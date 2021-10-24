@@ -2,6 +2,7 @@
 @import 'responsive.css';
 
 /* PRINCIPAL */
+* { user-select: none; }
 body
 {
     margin: 0!important;
@@ -12,7 +13,7 @@ button.btn
 { 
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
-    min-width: none;
+    min-width: 100%!important;
     transition: all 0.2s ease-in;
 }
 button.btn:hover 
@@ -61,10 +62,22 @@ nav#navigation div#entete button:hover
 }
 nav#navigation div#menu
 {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
-    height: 80vh;
+    height: 75vh;
+    scrollbar-color: var(--idb-nav-texte) rgba(0,0,0,0);
+    scrollbar-width: thin;
 }
+nav#navigation div#menu::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background-color: var(--idb-nav-fond);
+}
+nav#navigation div#menu::-webkit-scrollbar-button
+{ background-color: rgba(0,0,0,0); height: 0; }
+nav#navigation div#menu::-webkit-scrollbar-thumb
+{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; } 
+
 nav#navigation div#menu button
 {
     font-size: 1.2rem;
@@ -77,7 +90,6 @@ nav#navigation div#menu div.sous-menu button
 }
 nav#navigation div#menu div.sous-menu.ouvert-v
 {
-    height: 70%;
     opacity: 100%;
 }
 nav#navigation div#menu div.sous-menu.ferme-v
@@ -87,6 +99,18 @@ nav#navigation div#menu div.sous-menu.ferme-v
     margin: 0!important;
     visibility: hidden;
 }
+nav#navigation div#pied a
+{
+    color: var(--idb-nav-texte);
+    font-size: 2.3rem;
+    transition: all 0.2s ease-in;
+}
+nav#navigation div#pied a:hover
+{
+    font-size: 2.5rem;
+    transition: all 0.2s ease-out;
+}
+
 
 
 /* PAGE */
