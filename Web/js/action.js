@@ -31,3 +31,9 @@ function ouvrir_navigation()
 
 function ouvrir_sous_menu(id)
 { ouverture('sm-' + id, 'ouvert-v', 'ferme-v'); }
+
+function ouverture_acces_rapide()
+{ 
+    ouverture('acces-rapides', 'plus', 'moins');
+    ouverture('plus', 'plus', 'moins');
+}

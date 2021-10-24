@@ -21,7 +21,9 @@ button.btn
     min-width: 100%!important;
     transition: all 0.2s ease-in;
 }
-button.btn:hover
+button.btn:hover,
+button.btn:focus,
+button.btn:active
 {
     background-color: var(--idb-nav-texte);
     color: var(--idb-nav-fond);
@@ -163,14 +165,69 @@ main#page div#une div#menu
 {
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
-    padding: 1rem 0.5rem 1rem 1.5rem;
-    
+    padding: 1.25rem 0.5rem 1.25rem 1.5rem;
+    margin-bottom: .75rem;
+    border-radius: 0.7rem;
+}
+main#page div#une div#acces-rapides 
+{
+    margin: 1.5rem 2rem 0 1rem;
+    transition: all 0.2s ease-in;
+}
+main#page div#une div#acces-rapides.moins { height: 7.75rem; }
+main#page div#une div#acces-rapides.plus 
+{
+    height: 17.5rem;
+    transition: all 0.2s ease-out;
+}
+main#page div#une div#acces-rapides div.acces-rapide
+{
+    border-radius: .5rem;
+    margin-bottom: 1.75rem;
+    transition: all 0.1s ease-in;
+}
+main#page div#une div#plus
+{
+    margin-left: 45%;
+    width: 10%;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: -1.15rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in;
+}
+main#page div#une div#plus.plus i { transform: rotate(0deg); transition: all 0.2s ease-in; }
+main#page div#une div#plus.moins i { transform: rotate(180deg); transition: all 0.2s ease-out; }
+
+main#page div#une div#plus:hover,
+main#page div#une div#plus:focus,
+main#page div#une div#plus:active
+{
+    background-color: var(--idb-nav-texte);
+    color: var(--idb-nav-fond);
+    transition: all 0.2s ease-out;
+}
+main#page div#une div#plus:hover,
+main#page div#une div#plus:focus,
+main#page div#une div#plus:active
+{ cursor: pointer; }
+main#page div#une div#acces-rapides div.acces-rapide div.icone { font-size: 4rem; }
+main#page div#une div#acces-rapides div.acces-rapide:hover,
+main#page div#une div#acces-rapides div.acces-rapide:focus,
+main#page div#une div#acces-rapides div.acces-rapide:active
+{
+    cursor: pointer;
+    background-color: var(--idb-nav-texte);
+    color: var(--idb-nav-fond);
+    transition: all 0.1s ease-out;
 }
 
 /* CONTENU */
 main#page div#contenu
 {
     padding: 1rem 1.5rem 2.5rem 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 /* EN TETE */
@@ -178,6 +235,7 @@ main#page header div#actions
 {
     position: absolute;
     padding: 0.5rem 2.5rem 0 .5rem;
+    z-index: 3;
 }
 main#page header div#actions.nav-fermee
 {
