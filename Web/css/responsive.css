@@ -7,10 +7,6 @@
         margin-top: 0!important;
     }
 }
-@media (min-width: 992px)
-{
-    main#page header div#logo-mobile { display: none; }
-}
 
 @media (max-width: 768px)
 {
@@ -21,4 +17,10 @@
         margin-top: -0.6rem!important;
     }
     main#page header div#logo { display: none; }   
+    nav#navigation div#menu { height: 80vh!important; }
+
+}
+@media (min-width: 768px)
+{
+    main#page header div#logo-mobile { display: none; }
 }
