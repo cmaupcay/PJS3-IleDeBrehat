@@ -62,9 +62,10 @@ nav#navigation div#entete button:hover
 }
 nav#navigation div#menu
 {
+    margin: 0.3rem 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 75vh;
+    height: 80vh;
     scrollbar-color: var(--idb-nav-texte) rgba(0,0,0,0);
     scrollbar-width: thin;
 }
@@ -80,17 +81,18 @@ nav#navigation div#menu::-webkit-scrollbar-thumb
 
 nav#navigation div#menu button
 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
 nav#navigation div#menu div.sous-menu button
 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 0.15rem;
 }
 nav#navigation div#menu div.sous-menu.ouvert-v
 {
     opacity: 100%;
+    margin-top: -0.15rem!important;
 }
 nav#navigation div#menu div.sous-menu.ferme-v
 { 
@@ -99,15 +101,17 @@ nav#navigation div#menu div.sous-menu.ferme-v
     margin: 0!important;
     visibility: hidden;
 }
+nav#navigation div#pied
+{ margin-top: -0.3rem; }
 nav#navigation div#pied a
 {
     color: var(--idb-nav-texte);
-    font-size: 2.3rem;
+    font-size: 2rem;
     transition: all 0.2s ease-in;
 }
 nav#navigation div#pied a:hover
 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     transition: all 0.2s ease-out;
 }
 
