@@ -117,11 +117,30 @@ nav#navigation div#pied a:hover
 }
 
 /* PAGE */
+header, footer { overflow-x: hidden; }
 main#page
 {
     background-color: var(--idb-fond);
     color: var(--idb-texte);
     height: 100vh;
+    overflow: auto;
     transition: all 0.2s ease-out;
-    overflow-x: auto;
 }
+
+/* PIED */
+footer 
+{
+    color: var(--idb-nav-texte);
+    background-color: var(--idb-nav-fond);
+    font-size: 0.8rem;
+    padding: 1rem 0 1.5rem;
+}
+footer div#logos div figure { margin: 0; }
+footer div#logos div figure img { width: 5rem; }
+footer div#logos div#departement figure img { width: 15rem; margin-top: 1rem; }
+footer div#credits
+{
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+footer div#credits p { margin-bottom: 0.2rem; }
