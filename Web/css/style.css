@@ -233,7 +233,23 @@ main#page div#contenu
     position: relative;
     z-index: 1;
 }
-
+main#page div#contenu section#actualites div#une div#texte,
+main#page div#contenu section#actualites div#une div#photo img
+{ border-radius: 1.5rem; }
+main#page div#contenu section#actualites div#une div#texte
+{
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+}
+main#page div#contenu section#actualites div#une div#texte div#description { height: 77.5%; }
+main#page div#contenu section#actualites div#une div#texte div#lien
+{
+    height: 5%;
+    background-color: var(--idb-nav-fond);
+    position: relative;
+    z-index: 2;
+}
+main#page div#contenu section#actualites div#une div#texte div#informations { height: 17.5%; }
 
 /* EN TETE */
 main#page header div#actions
