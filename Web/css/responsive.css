@@ -12,7 +12,7 @@
 }
 @media (max-width: 992px) and (min-width: 768px)
 {
-    main#page div#contenu section#actualites div#une div#texte div#informations div#lieu h5 { font-size: 1rem!important; }
+    main#page div#contenu h5 { font-size: 1rem!important; }
     main#page div#contenu section#actualites div#une div#texte div#informations div#lien,
     main#page div#contenu section#actualites div#une div#texte div#informations div#horaire
     { font-size: 0.725rem!important; }
@@ -27,7 +27,6 @@
         margin-top: -0.6rem!important;
     }
     main#page header div#logo { display: none; }   
-    nav#navigation div#menu { height: 80vh!important; }
     main#page header div#actions { margin-left: .5rem; }
     main#page div#menu div#acces-rapides div.acces-rapide div.icone { font-size: 2.5rem!important; }
     main#page div#menu div#acces-rapides.moins { height: 5rem!important; }

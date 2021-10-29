@@ -2,7 +2,22 @@
 @import 'responsive.css';
 
 /* PRINCIPAL */
-* { user-select: none; }
+* 
+{
+    user-select: none;
+    transition: all 0.15s ease-in;
+    scrollbar-color: var(--idb-nav-texte) var(--idb-nav-fond);
+    scrollbar-width: thin;
+}
+*::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background-color: var(--idb-nav-fond);
+}
+*::-webkit-scrollbar-button
+{ background-color: var(--idb-nav-fond); height: 0; }
+*::-webkit-scrollbar-thumb
+{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
 p, span, a,
 h1, h2, h3, h4, h5, h6
 { user-select: text; }
@@ -74,18 +89,7 @@ nav#navigation div#menu
     margin: 0.3rem 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    scrollbar-color: var(--idb-nav-texte) rgba(0,0,0,0);
-    scrollbar-width: thin;
 }
-nav#navigation div#menu::-webkit-scrollbar
-{
-    width: 0.5rem;
-    background-color: var(--idb-nav-fond);
-}
-nav#navigation div#menu::-webkit-scrollbar-button
-{ background-color: rgba(0,0,0,0); height: 0; }
-nav#navigation div#menu::-webkit-scrollbar-thumb
-{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
 
 nav#navigation div#menu button
 {
@@ -136,6 +140,14 @@ div#fond
     background-repeat: no-repeat;
     background-size: cover;
 }
+main#page div#espace
+{
+    background-color: rgba(0,0,0,0);
+    height: 14rem;
+}
+main#page div#espace div.degrade-fond,
+main#page div#espace div.degrade-fond-inverse
+{ height: 75%; }
 
 /* PAGE */
 main#page header, main#page footer { overflow-x: hidden; }
@@ -146,18 +158,7 @@ main#page
     height: 100vh;
     overflow: auto;
     transition: all 0.2s ease-out;
-    scrollbar-color: var(--idb-nav-texte) var(--idb-nav-fond);
-    scrollbar-width: thin;
 }
-main#page::-webkit-scrollbar
-{
-    width: 0.5rem;
-    background-color: var(--idb-nav-fond);
-}
-main#page::-webkit-scrollbar-button
-{ background-color: var(--idb-nav-fond); height: 0; }
-main#page::-webkit-scrollbar-thumb
-{ background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
 
 /* UNE */
 main#page div#en-avant
@@ -229,19 +230,29 @@ main#page div#menu div#acces-rapides div.acces-rapide:active
 /* CONTENU */
 main#page div#contenu
 {
-    padding-bottom: 2.5rem!important;
     position: relative;
     z-index: 1;
 }
-main#page div#contenu section#actualites div#une div#texte,
-main#page div#contenu section#actualites div#une div#photo img
-{ border-radius: 1.5rem; }
+main#page div#contenu section#actualites div#une { max-height: 70rem; }
+main#page div#contenu section#actualites div#une div#photo
+{
+    border-radius: 1.5rem 0 0 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 main#page div#contenu section#actualites div#une div#texte
 {
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
+    border-radius: 0 1.5rem 1.5rem 0;
 }
 main#page div#contenu section#actualites div#une div#texte div#description { height: 77.5%; }
+main#page div#contenu section#actualites div#une div#texte div#description div 
+{
+    height: 25vh;
+    overflow-y: auto;
+}
 main#page div#contenu section#actualites div#une div#texte div#lien
 {
     height: 5%;
@@ -250,6 +261,46 @@ main#page div#contenu section#actualites div#une div#texte div#lien
     z-index: 2;
 }
 main#page div#contenu section#actualites div#une div#texte div#informations { height: 17.5%; }
+main#page div#contenu section#actualites div#recents article
+{
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 2rem 2rem 1rem 1rem;
+    cursor: pointer;
+    transition: scale 0.2s ease-in;
+}
+main#page div#contenu section#actualites div#une div#texte div#lien:hover,
+main#page div#contenu section#actualites div#recents article:hover
+{
+    scale: 1.05;
+    transition: scale 0.2s ease-out;
+}
+main#page div#contenu section#actualites div#recents article div#photo
+{ border-radius: 1rem 1rem 0 0; }
+main#page div#contenu section#actualites div#recents-plus
+{
+    height: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 0.25rem solid var(--idb-texte);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+main#page div#contenu section#actualites div#recents-plus:hover 
+{
+    font-size: 1.75rem;
+    height: 1.25rem;
+    margin-bottom: -0.25rem;
+}
+main#page div#contenu section#actualites div#recents-plus i
+{
+    position: relative;
+    top: -0.25rem;
+    padding: 0 0.25rem;
+    border-radius: 2rem;
+    background-color: var(--idb-fond);
+}
 
 /* EN TETE */
 main#page header div#actions
