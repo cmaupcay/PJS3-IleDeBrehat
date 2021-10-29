@@ -30,7 +30,14 @@ function ouvrir_navigation()
 }
 
 function ouvrir_sous_menu(id)
-{ ouverture('sm-' + id, 'ouvert-v', 'ferme-v'); }
+{ 
+    bouton = document.getElementById(id);
+    if (bouton.classList.contains('active'))
+        bouton.classList.remove('active');
+    else
+        bouton.classList.add('active');
+    ouverture('sm-' + id, 'ouvert-v', 'ferme-v');
+}
 
 function ouverture_acces_rapide()
 { 

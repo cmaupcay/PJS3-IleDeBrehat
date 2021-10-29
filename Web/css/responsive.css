@@ -36,6 +36,9 @@
     main#page div#contenu section#actualites div#une div#texte div#lien,
     main#page div#contenu section#actualites div#une div#texte div#description
     { height: auto!important;}
+    main#page div#contenu section#actualites div#une div#photo,
+    main#page div#contenu section#actualites div#une div#texte
+    { border-radius: 1.5rem!important; }
 }
 @media (min-width: 768px)
 {

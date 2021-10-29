@@ -34,15 +34,15 @@ button.btn
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
     min-width: 100%!important;
-    transition: all 0.2s ease-in;
+    transition: background-color color 0.1s ease-in;
 }
 button.btn:hover,
-button.btn:focus,
-button.btn:active
+button.btn:active,
+button.btn.active
 {
     background-color: var(--idb-nav-texte);
     color: var(--idb-nav-fond);
-    transition: all 0.2s ease-out;
+    transition: background-color color 0.1s ease-out;
 }
 
 /* NAVIGATION */
@@ -160,7 +160,7 @@ main#page
     transition: all 0.2s ease-out;
 }
 
-/* UNE */
+/* MENU ACCUEIl */
 main#page div#en-avant
 {
     min-height: 5rem;
@@ -233,13 +233,13 @@ main#page div#contenu
     position: relative;
     z-index: 1;
 }
-main#page div#contenu section#actualites div#une { max-height: 70rem; }
 main#page div#contenu section#actualites div#une div#photo
 {
     border-radius: 1.5rem 0 0 1.5rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 50vh;
 }
 main#page div#contenu section#actualites div#une div#texte
 {
@@ -277,7 +277,7 @@ main#page div#contenu section#actualites div#recents article:hover
     scale: 1.05;
     transition: scale 0.2s ease-out;
 }
-main#page div#contenu section#actualites div#recents article div#photo
+main#page div#contenu section#actualites div#recents article div#photo img
 { border-radius: 1rem 1rem 0 0; }
 main#page div#contenu section#actualites div#recents-plus
 {
