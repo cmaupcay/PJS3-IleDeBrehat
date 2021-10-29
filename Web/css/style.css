@@ -229,7 +229,7 @@ main#page div#menu div#acces-rapides div.acces-rapide:active
 /* CONTENU */
 main#page div#contenu
 {
-    padding: 1rem 1.5rem 2.5rem 3rem;
+    padding-bottom: 2.5rem!important;
     position: relative;
     z-index: 1;
 }
