@@ -16,8 +16,8 @@
     main#page section#actualites div#une div#texte div#informations div#lien,
     main#page section#actualites div#une div#texte div#informations div#horaire
     { font-size: 0.725rem!important; }
-    main#page section#agenda div#prochainement article div#photo { height: 21vh!important; }
-    main#page section article { width: 33.3vw!important; }
+    main#page section div article div#photo { height: 21vh!important; }
+    main#page section article { width: 50vw!important; }
 }
 
 @media (max-width: 768px)
@@ -41,7 +41,9 @@
     main#page section#actualites div#une div#photo,
     main#page section#actualites div#une div#texte
     { border-radius: 1.5rem!important; }
-    main#page section article { width: 50vw!important; }
+    main#page section article { width: 100vw!important; }
+    main#page section#actualites div#une div#texte div#description div,
+    main#page section div.liste-article article div#texte { height: auto!important; }
 }
 @media (min-width: 768px)
 {

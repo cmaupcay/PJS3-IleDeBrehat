@@ -18,7 +18,7 @@
 { background-color: var(--idb-nav-fond); height: 0; }
 *::-webkit-scrollbar-thumb
 { background-color: var(--idb-nav-texte); border-radius: 0.25rem; }
-p, span, a,
+p, a,
 h1, h2, h3, h4, h5, h6
 { user-select: text; }
 body
@@ -44,6 +44,7 @@ button.btn.active
     color: var(--idb-nav-fond);
     transition: background-color color 0.1s ease-out;
 }
+span.badge { text-transform: capitalize; }
 
 /* NAVIGATION */
 nav#navigation
@@ -249,13 +250,17 @@ main#page section article
     cursor: pointer;
     transition: transform 0.2s ease-in;
     width: 25vw;
+    display: table-cell;
 }
+main#page section div.liste-article article div#texte,
+main#page section div.liste-article article div#photo { height: 31vh; }
 main#page section div#lien:hover,
 main#page section article:hover
 {
     transform: scale(1.05);
     transition: transform 0.2s ease-out;
 }
+main#page section#actualites div#une div#photo,
 main#page section article div#photo
 { 
     background-repeat: no-repeat;
@@ -324,7 +329,6 @@ main#page section#actualites div#une div#texte div#lien
 }
 main#page section#actualites div#une div#texte div#informations { height: 17.5%; }
 /* AGENDA */
-main#page section#agenda div#prochainement article div#photo { height: 31vh; }
 main#page section#agenda div#prochainement article div#texte { height: 34vh; }
 
 /* EN TETE */
