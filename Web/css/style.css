@@ -34,6 +34,7 @@ button.btn
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
     min-width: 100%!important;
+    border-radius: 0.5rem;
     transition: background-color color 0.1s ease-in;
 }
 button.btn:hover,
@@ -58,7 +59,7 @@ nav#navigation
 nav#navigation.ferme
 { width: 0px; }
 nav#navigation.ouvert
-{ width: 35%; }
+{ width: 45%; }
 nav#navigation.ouvert div.container-fluid
 {
     opacity: 100%;
@@ -107,13 +108,14 @@ nav#navigation div#menu div.sous-menu.ouvert-v
     opacity: 100%;
     margin-top: -0.15rem!important;
 }
-nav#navigation div#menu div.sous-menu.ferme-v
+nav#navigation div#menu div.sous-menu.ferme-v,
+nav#navigation div#menu div.sous-menu.ferme-v button
 {
-    height: 0;
     opacity: 0%;
     margin: 0!important;
-    visibility: hidden;
+    padding: 0!important;
 }
+nav#navigation div#menu div.sous-menu.ferme-v button { display: none; }
 nav#navigation div#pied
 { margin-top: -0.3rem; }
 nav#navigation div#pied a

@@ -29,13 +29,26 @@ function ouvrir_navigation()
     obscursir('page');
 }
 
+function desactiver(objet)
+{
+    if (objet.classList.contains('active'))
+        objet.classList.remove('active');
+    else
+        objet.classList.add('active');
+}
 function ouvrir_sous_menu(id)
 { 
     bouton = document.getElementById(id);
-    if (bouton.classList.contains('active'))
-        bouton.classList.remove('active');
-    else
-        bouton.classList.add('active');
+    desactiver(bouton);
+    sous_menus = document.getElementsByClassName('sous-menu');
+    sous_menus.forEach(sous_menu => {
+        if (sous_menu.id != 'sm-' + id && sous_menu.classList.contains('ouvert-v'))
+        {
+            sous_menu.classList.remove('ouvert-v');
+            sous_menu.classList.add('ferme-v');
+            desactiver(document.getElementById((sous_menu.id.replace('sm-', ''))));
+        }
+    });
     ouverture('sm-' + id, 'ouvert-v', 'ferme-v');
 }
 
