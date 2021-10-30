@@ -12,9 +12,9 @@
 }
 @media (max-width: 992px) and (min-width: 768px)
 {
-    main#page div#contenu h5 { font-size: 1rem!important; }
-    main#page div#contenu section#actualites div#une div#texte div#informations div#lien,
-    main#page div#contenu section#actualites div#une div#texte div#informations div#horaire
+    main#page h5 { font-size: 1rem!important; }
+    main#page section#actualites div#une div#texte div#informations div#lien,
+    main#page section#actualites div#une div#texte div#informations div#horaire
     { font-size: 0.725rem!important; }
 }
 
@@ -32,12 +32,12 @@
     main#page div#menu div#acces-rapides.moins { height: 5rem!important; }
     main#page div#menu div#acces-rapides.plus { height: 27.5rem!important; }
 
-    main#page div#contenu section#actualites div#une div#texte div#informations,
-    main#page div#contenu section#actualites div#une div#texte div#lien,
-    main#page div#contenu section#actualites div#une div#texte div#description
+    main#page section#actualites div#une div#texte div#informations,
+    main#page section#actualites div#une div#texte div#lien,
+    main#page section#actualites div#une div#texte div#description
     { height: auto!important;}
-    main#page div#contenu section#actualites div#une div#photo,
-    main#page div#contenu section#actualites div#une div#texte
+    main#page section#actualites div#une div#photo,
+    main#page section#actualites div#une div#texte
     { border-radius: 1.5rem!important; }
 }
 @media (min-width: 768px)

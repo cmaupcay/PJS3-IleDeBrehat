@@ -119,12 +119,12 @@ nav#navigation div#pied a
 {
     color: var(--idb-nav-texte);
     font-size: 2rem;
-    transition: all 0.2s ease-in;
+    transition: font-size 0.2s ease-in;
 }
 nav#navigation div#pied a:hover
 {
     font-size: 2.2rem;
-    transition: all 0.2s ease-out;
+    transition: font-size 0.2s ease-out;
 }
 
 /* FOND */
@@ -148,6 +148,11 @@ main#page div#espace
 main#page div#espace div.degrade-fond,
 main#page div#espace div.degrade-fond-inverse
 { height: 75%; }
+main#page div#espace div.degrade-fond
+{
+    position: relative;
+    top: 25%;
+}
 
 /* PAGE */
 main#page header, main#page footer { overflow-x: hidden; }
@@ -233,35 +238,8 @@ main#page div#contenu
     position: relative;
     z-index: 1;
 }
-main#page div#contenu section#actualites div#une div#photo
-{
-    border-radius: 1.5rem 0 0 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 50vh;
-}
-main#page div#contenu section#actualites div#une div#texte
-{
-    background-color: var(--idb-nav-fond);
-    color: var(--idb-nav-texte);
-    border-radius: 0 1.5rem 1.5rem 0;
-}
-main#page div#contenu section#actualites div#une div#texte div#description { height: 77.5%; }
-main#page div#contenu section#actualites div#une div#texte div#description div 
-{
-    height: 25vh;
-    overflow-y: auto;
-}
-main#page div#contenu section#actualites div#une div#texte div#lien
-{
-    height: 5%;
-    background-color: var(--idb-nav-fond);
-    position: relative;
-    z-index: 2;
-}
-main#page div#contenu section#actualites div#une div#texte div#informations { height: 17.5%; }
-main#page div#contenu section#actualites div#recents article
+/* COMMUN */
+main#page section article
 {
     background-color: var(--idb-nav-fond);
     color: var(--idb-nav-texte);
@@ -269,17 +247,17 @@ main#page div#contenu section#actualites div#recents article
     padding-left: 0;
     border-radius: 2rem 2rem 1rem 1rem;
     cursor: pointer;
-    transition: scale 0.2s ease-in;
+    transition: transform 0.2s ease-in;
 }
-main#page div#contenu section#actualites div#une div#texte div#lien:hover,
-main#page div#contenu section#actualites div#recents article:hover
+main#page section div#lien:hover,
+main#page section article:hover
 {
-    scale: 1.05;
-    transition: scale 0.2s ease-out;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out;
 }
-main#page div#contenu section#actualites div#recents article div#photo img
+main#page section article div#photo img
 { border-radius: 1rem 1rem 0 0; }
-main#page div#contenu section#actualites div#recents-plus
+main#page section div#recents-plus
 {
     height: 1rem;
     font-size: 1.5rem;
@@ -287,13 +265,13 @@ main#page div#contenu section#actualites div#recents-plus
     border-radius: 1rem;
     cursor: pointer;
 }
-main#page div#contenu section#actualites div#recents-plus:hover 
+main#page section div#recents-plus:hover 
 {
     font-size: 1.75rem;
     height: 1.25rem;
     margin-bottom: -0.25rem;
 }
-main#page div#contenu section#actualites div#recents-plus i
+main#page section div#recents-plus i
 {
     position: relative;
     top: -0.25rem;
@@ -301,6 +279,47 @@ main#page div#contenu section#actualites div#recents-plus i
     border-radius: 2rem;
     background-color: var(--idb-fond);
 }
+/* RESEAUX */
+main#page section#reseaux a
+{
+    color: var(--idb-texte);
+    font-size: 5rem;
+}
+main#page section#reseaux a i { transition: transform 0.2s ease-out; }
+main#page section#reseaux a:hover i
+{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+/* ACTUALITES */
+main#page section#actualites div#une div#photo
+{
+    border-radius: 1.5rem 0 0 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+}
+main#page section#actualites div#une div#texte
+{
+    background-color: var(--idb-nav-fond);
+    color: var(--idb-nav-texte);
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+main#page section#actualites div#une div#texte div#description { height: 77.5%; }
+main#page section#actualites div#une div#texte div#description div 
+{
+    height: 25vh;
+    overflow-y: auto;
+}
+main#page section#actualites div#une div#texte div#lien
+{
+    height: 5%;
+    background-color: var(--idb-nav-fond);
+    position: relative;
+    z-index: 2;
+}
+main#page section#actualites div#une div#texte div#informations { height: 17.5%; }
 
 /* EN TETE */
 main#page header div#actions
@@ -337,12 +356,12 @@ footer div#logos div figure { margin: 0; }
 footer div#logos div figure img 
 {
     width: 5rem;
-    transition: all 0.2s ease-in;
+    transition: transform 0.2s ease-in;
 }
 footer div#logos div figure:hover img 
 {
     transform: scale(1.05);
-    transition: all 0.2s ease-out;
+    transition: transform 0.2s ease-out;
 }
 footer div#logos div#departement figure img
 {

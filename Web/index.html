@@ -23,7 +23,7 @@
   </head>
   <body class="container-fluid">
 
-    <nav id="navigation" class="d-flex flex-column flex-shrink-1 p-3 text-center ferme">
+    <nav id="navigation" class="d-flex flex-column flex-shrink-1 p-3 text-center shadow-lg ferme">
       <div class="container-fluid">
         <div id="entete" class="row">
           <div class="col-10">
@@ -81,7 +81,7 @@
               <button id="contact" class="btn" onclick="document.location = 'contact/'">
                 <i class="fas fa-phone-square-alt me-2"></i>
                 Contact
-              </button>  
+              </button> 
             </div>
           </div>
         </div>
@@ -102,9 +102,9 @@
         <div class="row">
           <div class="col-0 col-sm-1 col-md-2"></div>
           <div class="col-12 col-sm-10 col-md-8 text-center">
-            <div id="menu">
+            <div id="menu" class="shadow">
               <form method="get" class="input-group rounded">
-                <input type="search" class="form-control rounded" name="q" placeholder="Rechercher sur le site" aria-label="Recherche"
+                <input type="search" class="form-control rounded shadow-sm" name="q" placeholder="Rechercher sur le site" aria-label="Recherche"
                 aria-describedby="rechercher"/>
                 <span class="border-0 mx-2 mx-md-3" id="rechercher">
                   <button class="input-group btn" type="submit"><i class="fas fa-search"></i></button>  
@@ -159,7 +159,7 @@
             <div class="col-12 col-sm-10">
               <section id="actualites">
                 <h1 class="text-uppercase mb-3 text-center text-md-start">Actualités</h1>
-                <div id="une" class="row">
+                <div id="une" class="row shadow-sm">
                   <div id="photo" class="col-12 col-md-7" style="background-image: url(./img/actualites/halloween.jpg);"></div>
                   <div id="texte" class="col-12 col-md-5 mt-4 mt-md-0 p-4">
                     <div class="d-block h-100">
@@ -192,44 +192,44 @@
                 </div>
                 <div id="recents" class="row mt-5 mt-md-4">
                   <div class="col-6 col-sm-4 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell" onclick="document.location = './articles/joyeux-halloween/'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './articles/joyeux-halloween/'">
                       <div id="photo" class="w-100">
                         <img src="img/actualites/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
                       </div>
-                      <div id="texte" class="p-2">
+                      <div id="texte" class="py-2 px-3">
                         <h6 class="text-muted mt-1">Evenement</h6>
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
                       </div>
                     </article>
                   </div>
                   <div class="col-6 col-sm-4 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell" onclick="document.location = './articles/joyeux-halloween/'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './articles/joyeux-halloween/'">
                       <div id="photo" class="w-100">
                         <img src="img/actualites/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
                       </div>
-                      <div id="texte" class="p-2">
+                      <div id="texte" class="py-2 px-3">
                         <h6 class="text-muted mt-1">Evenement</h6>
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
                       </div>
                     </article>
                   </div>
-                  <div class="col-6 col-sm-4 col-md-3">
-                    <article class="m-1 m-sm-2 d-table-cell" onclick="document.location = './articles/joyeux-halloween/'">
+                  <div class="col-6 col-sm-4 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './articles/joyeux-halloween/'">
                       <div id="photo" class="w-100">
                         <img src="img/actualites/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
                       </div>
-                      <div id="texte" class="p-2">
+                      <div id="texte" class="py-2 px-3">
                         <h6 class="text-muted mt-1">Evenement</h6>
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
                       </div>
                     </article>
                   </div>
-                  <div class="col-6 col-sm-0 col-md-3 d-sm-none d-md-block">
-                    <article class="m-1 m-sm-2 d-table-cell" onclick="document.location = './articles/joyeux-halloween/'">
+                  <div class="col-6 col-sm-0 col-md-3 pb-4 d-sm-none d-md-block">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './articles/joyeux-halloween/'">
                       <div id="photo" class="w-100">
                         <img src="img/actualites/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
                       </div>
-                      <div id="texte" class="p-2">
+                      <div id="texte" class="py-2 px-3">
                         <h6 class="text-muted mt-1">Evenement</h6>
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
                       </div>
@@ -248,7 +248,122 @@
       <div id="espace">
         <div class="degrade-fond-inverse"></div>
       </div>
+      <div id="espace">
+        <div class="degrade-fond"></div>
+      </div>
+      <div id="contenu-2" class="container-fluid plein">
+        <div class="container-fluid">
+          <div class="row pb-3">
+            <div class="col-0 col-sm-1"></div>
+            <div class="col-12 col-sm-10">
+              <section id="agenda">
+                <h1 class="text-uppercase mb-3 text-center text-md-start">Agenda</h1>
+                <div id="prochainement" class="row mt-5 mt-md-4">
+                  <div class="col-6 col-sm-4 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './agenda/joyeux-halloween/'">
+                      <div id="photo" class="w-100">
+                        <img src="img/agenda/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
+                      </div>
+                      <div id="texte" class="py-2 px-3 text-center">
+                        <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
+                        <h6 class="text-muted">La grange</h6>
+                        <div class="small pt-3 mb-3">
+                          <p>31/10/2021</p>
+                          <p><i class="fas fa-clock me-2"></i> 11:00 - 13:30</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './agenda/joyeux-halloween/'">
+                      <div id="photo" class="w-100">
+                        <img src="img/agenda/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
+                      </div>
+                      <div id="texte" class="py-2 px-3 text-center">
+                        <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
+                        <h6 class="text-muted">La grange</h6>
+                        <div class="small pt-3 mb-3">
+                          <p>31/10/2021</p>
+                          <p><i class="fas fa-clock me-2"></i> 11:00 - 13:30</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './agenda/joyeux-halloween/'">
+                      <div id="photo" class="w-100">
+                        <img src="img/agenda/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
+                      </div>
+                      <div id="texte" class="py-2 px-3 text-center">
+                        <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
+                        <h6 class="text-muted">La grange</h6>
+                        <div class="small pt-3 mb-3">
+                          <p>31/10/2021</p>
+                          <p><i class="fas fa-clock me-2"></i> 11:00 - 13:30</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-6 col-sm-0 col-md-3 pb-4 d-sm-none d-md-block">
+                    <article class="m-1 m-sm-2 d-table-cell shadow-sm" onclick="document.location = './agenda/joyeux-halloween/'">
+                      <div id="photo" class="w-100">
+                        <img src="img/agenda/halloween.jpg" alt="Joyeux Halloween !" class="img-fluid w-100">
+                      </div>
+                      <div id="texte" class="py-2 px-3 text-center">
+                        <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
+                        <h6 class="text-muted">La grange</h6>
+                        <div class="small pt-3 mb-3">
+                          <p>31/10/2021</p>
+                          <p><i class="fas fa-clock me-2"></i> 11:00 - 13:30</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div id="recents-plus" class="text-center mx-0 mx-sm-2 mx-md-4 mb-8" onclick="document.location = './agenda/'">
+                  <i class="fa fa-plus-circle"></i>
+                </div>
+              </section>
+              <section id="reseaux" class="mt-5 text-center">
+                <h1 class="text-uppercase mb-3 text-center">Réseaux sociaux</h1>
+                <div class="row">
+                  <div class="col-6">
+                    <a target="_blank" href="https://www.facebook.com/pg/Mairie-de-lile-de-Br%C3%A9hat-109476447520454/">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCKjtJqq0QdIYhCIgUOmA36Q">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-0 col-sm-1"></div>
+          </div>
+        </div>
+      </div>
       <footer class="container-fluid text-center px-0 px-sm-2 px-md-5">
+        <div id="liens" class="row mb-5">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <a href="actualites/">Actualités</a>
+          </div>
+          <div class="col-2">
+            <a href="agendas/">Agendas</a>
+          </div>
+          <div class="col-2">
+            <a href="meteo/">Météo</a>
+          </div>
+          <div class="col-2">
+            <a href="plan/">Plan du site</a>
+          </div>
+          <div class="col-2">
+            <a href="mentions-legales/">Mentions légales</a>
+          </div>
+          <div class="col-1"></div>
+        </div>
         <div class="container">
           <p>
             <b>Site officiel de la commune d'Île-de-Bréhat</b>
@@ -256,24 +371,24 @@
             Toute l’information pratique sur l’administration de la commune, les démarches administratives, les services, la vie quotidienne insulaire, les loisirs et le tourisme.
           </p>
         </div>
-        <div class="row" id="logos">
+        <div class="row mb-5" id="logos">
           <div class="col-4" id="commune">
             <figure class="figure">
-              <a href="https://www.iledebrehat.fr/">
+              <a href="https://www.iledebrehat.fr/" target="_blank">
                 <img src="img/logos/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="departement">
             <figure class="figure">
-              <a href="https://cotesdarmor.fr/">
+              <a href="https://cotesdarmor.fr/" target="_blank">
                 <img src="img/logos/departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="region">
             <figure class="figure">
-              <a href="https://www.bretagne.bzh/">
+              <a href="https://www.bretagne.bzh/" target="_blank">
                 <img src="img/logos/region.svg" alt="Bretagne" class="figure-img img-fluid">
               </a>
             </figure>
@@ -290,6 +405,8 @@
 
     <!-- MDB : JavaScript -->
     <script type="text/javascript" src="lib/mdb/mdb.min.js"></script>
+    <!-- Chart.js -->
+    <script type="text/javascript" src="lib/chart.min.js"></script>
     <!-- Scripts -->
     <script type="text/javascript" src="js/action.js"></script>
     <script type="text/javascript">
