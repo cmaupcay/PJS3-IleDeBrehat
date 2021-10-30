@@ -248,6 +248,7 @@ main#page section article
     border-radius: 2rem 2rem 1rem 1rem;
     cursor: pointer;
     transition: transform 0.2s ease-in;
+    width: 25vw;
 }
 main#page section div#lien:hover,
 main#page section article:hover
@@ -255,8 +256,13 @@ main#page section article:hover
     transform: scale(1.05);
     transition: transform 0.2s ease-out;
 }
-main#page section article div#photo img
-{ border-radius: 1rem 1rem 0 0; }
+main#page section article div#photo
+{ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
 main#page section div#recents-plus
 {
     height: 1rem;
@@ -295,9 +301,6 @@ main#page section#reseaux a:hover i
 main#page section#actualites div#une div#photo
 {
     border-radius: 1.5rem 0 0 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-height: 50vh;
 }
 main#page section#actualites div#une div#texte
@@ -320,6 +323,9 @@ main#page section#actualites div#une div#texte div#lien
     z-index: 2;
 }
 main#page section#actualites div#une div#texte div#informations { height: 17.5%; }
+/* AGENDA */
+main#page section#agenda div#prochainement article div#photo { height: 31vh; }
+main#page section#agenda div#prochainement article div#texte { height: 34vh; }
 
 /* EN TETE */
 main#page header div#actions
@@ -341,7 +347,7 @@ main#page header div#actions.nav-ouverte
 main#page header div#logo, main#page header div#logo-mobile
 { cursor: pointer; }
 main#page header div#logo img { width: 12rem; }
-main#page header div#logo-mobile img {width: 14rem;}
+main#page header div#logo-mobile img { width: 14rem; }
 main#page header div#logo-mobile { margin-top: 4.5rem; }
 
 /* PIED */
