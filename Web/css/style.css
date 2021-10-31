@@ -173,6 +173,8 @@ main#page div#en-avant
 {
     min-height: 5rem;
 }
+main#page div#categories span { cursor: pointer; }
+main#page div#categories span:hover { transform: scale(1.05); }
 main#page div#en-avant div#menu
 {
     background-color: var(--idb-nav-fond);

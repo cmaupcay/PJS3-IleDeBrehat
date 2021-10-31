@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Île-de-Bréhat - Accueil</title>
+    <title>Île-de-Bréhat - Articles</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- Google Fonts : Roboto -->
@@ -13,11 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB : CSS -->
-    <link rel="stylesheet" href="lib/mdb/mdb.min.css" />
+    <link rel="stylesheet" href="../lib/mdb/mdb.min.css" />
     <!-- CSS personnel -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icone.png" type="image/x-icon">
   </head>
   <body class="container-fluid">
 
@@ -26,7 +26,7 @@
         <div id="entete" class="row">
           <div class="col-10">
               <figure class="figure">
-                <img src="img/logos/ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
+                <img src="../img/logos/ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
               </figure>
           </div>
           <div class="col-2">
@@ -36,18 +36,18 @@
         <div id="menu" class="container-fluid">
           <div class="gap-2 d-grid">
             <!-- ACTUALITES -->
-            <button id="actualites" class="btn" onclick="ouvrir_sous_menu('actualites')">
+            <button id="actualites" class="btn active" onclick="ouvrir_sous_menu('actualites')">
               <i class="fas fa-newspaper me-2"></i>
               Actualités
             </button>
-            <div id="sm-actualites" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn mb-3" onclick="document.location = 'actualites/covid-19/index.html'">
+            <div id="sm-actualites" class="sous-menu gap-1 my-2 mx-5 d-grid ouvert-v">
+              <button class="btn mb-3" onclick="document.location = 'covid-19/index.html'">
                 <i class="fa fa-exclamation-triangle me-2"></i>
                 COVID-19
               </button>
-              <button class="btn" onclick="document.location = 'actualites/enquetes/index.html'">Enquêtes publiques</button>
-              <button class="btn" onclick="document.location = 'actualites/municipalite/index.html'">Municipalité</button>
-              <button class="btn" onclick="document.location = 'actualites/services/index.html'">Services</button>
+              <button class="btn" onclick="document.location = 'enquetes/index.html'">Enquêtes publiques</button>
+              <button class="btn" onclick="document.location = 'municipalite/index.html'">Municipalité</button>
+              <button class="btn" onclick="document.location = 'services/index.html'">Services</button>
             </div>
             <!-- METEO -->
             <button id="meteo" class="btn" onclick="ouvrir_sous_menu('meteo')">
@@ -55,9 +55,9 @@
               Météo
             </button>
             <div id="sm-meteo" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = 'meteo/aujourdhui.html'">Aujourd'hui</button>
-              <button class="btn" onclick="document.location = 'meteo/semaine.html'">Semaine</button>
-              <button class="btn" onclick="document.location = 'meteo/marees.html'">Marées</button>
+              <button class="btn" onclick="document.location = '../meteo/aujourdhui.html'">Aujourd'hui</button>
+              <button class="btn" onclick="document.location = '../meteo/semaine.html'">Semaine</button>
+              <button class="btn" onclick="document.location = '../meteo/marees.html'">Marées</button>
             </div>
             <!-- TRANSPORTS -->
             <button id="transports" class="btn" onclick="ouvrir_sous_menu('transports')">
@@ -65,9 +65,9 @@
               Transports
             </button>
             <div id="sm-transports" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = 'transports/vedettes.html'">Vedettes</button>
-              <button class="btn" onclick="document.location = 'transports/ports.html'">Ports</button>
-              <button class="btn" onclick="document.location = 'transports/sur-l-ile.html'">Sur l'île</button>
+              <button class="btn" onclick="document.location = '../transports/vedettes.html'">Vedettes</button>
+              <button class="btn" onclick="document.location = '../transports/ports.html'">Ports</button>
+              <button class="btn" onclick="document.location = '../transports/sur-l-ile.html'">Sur l'île</button>
             </div>
             <!-- DEMARCHES -->
             <button id="demarches" class="btn" onclick="ouvrir_sous_menu('demarches')">
@@ -75,20 +75,20 @@
               Démarches
             </button>
             <div id="sm-demarches" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn mb-3" onclick="document.location = 'demarches/paiement-en-ligne.html'">
+              <button class="btn mb-3" onclick="document.location = '../demarches/paiement-en-ligne.html'">
                 <i class="fa fa-credit-card me-2"></i>
                 Paiement en ligne
               </button>
-              <button class="btn" onclick="document.location = 'demarches/etat-civil.html'">Etat civil</button>
-              <button class="btn" onclick="document.location = 'demarches/papiers-d-identite.html'">Papiers d'identité</button>
-              <button class="btn" onclick="document.location = 'demarches/urbanisme-et-plu.html'">Urbanisme & PLU</button>
-              <button class="btn" onclick="document.location = 'demarches/taxe-de-sejour.html'">Taxe de séjour</button>
-              <button class="btn" onclick="document.location = 'demarches/elections.html'">Elections</button>
-              <button class="btn" onclick="document.location = 'demarches/mouillages.html'">Mouillages</button>
-              <button class="btn" onclick="document.location = 'demarches/tarifs-communaux.html'">Tarifs communaux</button>
-              <button class="btn" onclick="document.location = 'demarches/parking/l-arcouest.html.html'">Parking l'Arcouest</button>
-              <button class="btn" onclick="document.location = 'demarches/vehicules.html'">Véhicules</button>
-              <button class="btn" onclick="document.location = 'demarches/ecole-et-garderie.html'">Ecole & Garderie</button>
+              <button class="btn" onclick="document.location = '../demarches/etat-civil.html'">Etat civil</button>
+              <button class="btn" onclick="document.location = '../demarches/papiers-d-identite.html'">Papiers d'identité</button>
+              <button class="btn" onclick="document.location = '../demarches/urbanisme-et-plu.html'">Urbanisme & PLU</button>
+              <button class="btn" onclick="document.location = '../demarches/taxe-de-sejour.html'">Taxe de séjour</button>
+              <button class="btn" onclick="document.location = '../demarches/elections.html'">Elections</button>
+              <button class="btn" onclick="document.location = '../demarches/mouillages.html'">Mouillages</button>
+              <button class="btn" onclick="document.location = '../demarches/tarifs-communaux.html'">Tarifs communaux</button>
+              <button class="btn" onclick="document.location = '../demarches/parking/l-arcouest.html.html'">Parking l'Arcouest</button>
+              <button class="btn" onclick="document.location = '../demarches/vehicules.html'">Véhicules</button>
+              <button class="btn" onclick="document.location = '../demarches/ecole-et-garderie.html'">Ecole & Garderie</button>
             </div>
             <!-- SANTE -->
             <button id="sante" class="btn" onclick="ouvrir_sous_menu('sante')">
@@ -96,10 +96,10 @@
               Santé
             </button>
             <div id="sm-sante" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = 'sante/cabinet/index.html'">Cabinet médical</button>
-              <button class="btn" onclick="document.location = 'sante/ehpad/index.html'">EHPAD</button>
-              <button class="btn" onclick="document.location = 'sante/cellule-covid/index.html'">Cellule COVID</button>
-              <button class="btn" onclick="document.location = 'sante/transport-vsl/index.html'">Transport VSL</button>
+              <button class="btn" onclick="document.location = '../sante/cabinet/index.html'">Cabinet médical</button>
+              <button class="btn" onclick="document.location = '../sante/ehpad/index.html'">EHPAD</button>
+              <button class="btn" onclick="document.location = '../sante/cellule-covid/index.html'">Cellule COVID</button>
+              <button class="btn" onclick="document.location = '../sante/transport-vsl/index.html'">Transport VSL</button>
             </div>
             <!-- CULTURE -->
             <button id="culture" class="btn" onclick="ouvrir_sous_menu('culture')">
@@ -107,10 +107,10 @@
               Culture
             </button>
             <div id="sm-culture" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = 'culture/office-tourisme/index.html'">Office du tourisme</button>
-              <button class="btn" onclick="document.location = 'culture/activites/index.html'">Activités</button>
-              <button class="btn" onclick="document.location = 'culture/histoire/index.html'">Histoire</button>
-              <button class="btn" onclick="document.location = 'culture/patrimoine/index.html'">Patrimoine</button>
+              <button class="btn" onclick="document.location = '../culture/office-tourisme/index.html'">Office du tourisme</button>
+              <button class="btn" onclick="document.location = '../culture/activites/index.html'">Activités</button>
+              <button class="btn" onclick="document.location = '../culture/histoire/index.html'">Histoire</button>
+              <button class="btn" onclick="document.location = '../culture/patrimoine/index.html'">Patrimoine</button>
             </div>
             <!-- SERVICES -->
             <button id="services" class="btn" onclick="ouvrir_sous_menu('services')">
@@ -118,15 +118,15 @@
               Services
             </button>
             <div id="sm-services" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn mb-3" onclick="document.location = 'services/brehat-infos/index.html'">
+              <button class="btn mb-3" onclick="document.location = '../services/brehat-infos/index.html'">
                 <i class="fa fa-book-reader me-2"></i>
                 Bréhat Infos
               </button>
-              <button class="btn" onclick="document.location = 'services/dechets/index.html'">Gestion des déchets</button>
-              <button class="btn" onclick="document.location = 'services/eau/index.html'">Gestion de l'eau</button>
-              <button class="btn" onclick="document.location = 'services/techniques/index.html'">Services techniques</button>
-              <button class="btn" onclick="document.location = 'services/pompiers/index.html'">Pompiers</button>
-              <button class="btn" onclick="document.location = 'services/location-salles/index.html'">Location de salles</button>
+              <button class="btn" onclick="document.location = '../services/dechets/index.html'">Gestion des déchets</button>
+              <button class="btn" onclick="document.location = '../services/eau/index.html'">Gestion de l'eau</button>
+              <button class="btn" onclick="document.location = '../services/techniques/index.html'">Services techniques</button>
+              <button class="btn" onclick="document.location = '../services/pompiers/index.html'">Pompiers</button>
+              <button class="btn" onclick="document.location = '../services/location-salles/index.html'">Location de salles</button>
             </div>
             <!-- AGENDA -->
             <button id="agenda" class="btn">
@@ -139,9 +139,9 @@
               Statistiques
             </button>
             <div id="sm-stats" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = 'stats/ventes/index.html'">Evolutions des ventes</button>
-              <button class="btn" onclick="document.location = 'stats/habitudes/index.html'">Habitudes de consommation</button>
-              <button class="btn" onclick="document.location = 'stats/demographie/index.html'">Démographie</button>
+              <button class="btn" onclick="document.location = '../stats/ventes/index.html'">Evolutions des ventes</button>
+              <button class="btn" onclick="document.location = '../stats/habitudes/index.html'">Habitudes de consommation</button>
+              <button class="btn" onclick="document.location = '../stats/demographie/index.html'">Démographie</button>
             </div>
           </div>
         </div>
@@ -172,10 +172,10 @@
                 Menu
               </button>  
             </div>
-            <div id="logo" class="col-md-6" onclick="window.location = ''">
+            <div id="logo" class="col-md-6" onclick="window.location = '../index.html'">
             </div>
             <div class="col-md-3 col-6">
-              <button id="contact" class="btn" onclick="document.location = 'contact/index.html'">
+              <button id="contact" class="btn" onclick="document.location = '../contact/index.html'">
                 <i class="fas fa-phone-square-alt me-2"></i>
                 Contact
               </button> 
@@ -184,14 +184,14 @@
         </div>
         <div id="logo-bureau" class="row">
           <div class="col-md-3 col-6"></div>
-              <div id="logo" class="col-md-6 text-center" onclick="window.location = ''">
-                <img src="img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
+              <div id="logo" class="col-md-6 text-center" onclick="window.location = '../index.html'">
+                <img src="../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
               </div>
           <div class="col-md-3 col-6"></div>
         </div>
         <div id="logo-mobile" class="row">
-          <div class="col-12 text-center" onclick="window.location = ''">
-              <img src="img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
+          <div class="col-12 text-center" onclick="window.location = '../index.html'">
+              <img src="../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
           </div>
         </div>
       </header>
@@ -201,48 +201,18 @@
           <div class="col-12 col-sm-10 col-md-8 text-center">
             <div id="menu" class="shadow">
               <form method="get" class="input-group rounded">
-                <input type="search" class="form-control rounded shadow-sm" name="q" placeholder="Rechercher sur le site" aria-label="Recherche"
+                <input type="search" class="form-control rounded shadow-sm" name="q" placeholder="Rechercher dans les articles" aria-label="Recherche"
                 aria-describedby="rechercher"/>
                 <span class="border-0 mx-2 mx-md-3" id="rechercher">
                   <button class="input-group btn" type="submit"><i class="fas fa-search"></i></button>  
                 </span>
               </form>
-              <div id="acces-rapides" class="row moins">
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'articles/index.html'">
-                  <div class="icone"><i class="fas fa-newspaper"></i></div>
-                  <h5>Actualités</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'meteo/index.html'">
-                  <div class="icone"><i class="fas fa-sun"></i></div>
-                  <h5>Météo</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'transports/index.html'">
-                  <div class="icone"><i class="fas fa-ship"></i></div>
-                  <h5>Transports</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'demarches/index.html'">
-                  <div class="icone"><i class="fas fa-id-card"></i></div>
-                  <h5>Démarches</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'sante/index.html'">
-                  <div class="icone"><i class="fas fa-medkit"></i></div>
-                  <h5>Santé</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'culture/index.html'">
-                  <div class="icone"><i class="fas fa-theater-masks"></i></div>
-                  <h5>Culture</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'services/index.html'">
-                  <div class="icone"><i class="fas fa-hands-helping"></i></div>
-                  <h5>Services</h5>
-                </div>
-                <div class="acces-rapide col-6 col-sm-4 col-md-3 d-lg-table-cell"  onclick="window.location = 'agenda/index.html'">
-                  <div class="icone"><i class="fas fa-calendar-week"></i></div>
-                  <h5>Agenda</h5>
-                </div>
-              </div>
-              <div id="plus" class="row text-center plus" onclick="ouverture_acces_rapide()">
-                <i class="fas fa-caret-down"></i>
+              <div id="categories" class="mt-2">
+                <span class="badge bg-secondary me-4" onclick="document.location = 'une/index.html'">A la une</span>
+                <span class="badge bg-danger me-4" onclick="document.location = 'covid-19/index.html'">COVID-19</span>
+                <span class="badge bg-success me-2" onclick="document.location = 'municipalite/index.html'">Municipalité</span>
+                <span class="badge bg-warning me-2" onclick="document.location = 'services/index.html'">Services</span>
+                <span class="badge bg-info me-2" onclick="document.location = 'enquetes/index.html'">Enquête publique</span>
               </div>
             </div>
           </div>
@@ -254,71 +224,10 @@
           <div class="row">
             <div class="col-0 col-sm-1"></div>
             <div class="col-12 col-sm-10">
-              <section id="actualites-covid" class="mb-4">
-                <h1 class="text-uppercase mb-3 text-center text-md-start">COVID-19</h1>
-                <div id="recents-covid-19" class="row mt-4 mt-md-4 liste-article">
-                  <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/covid-19/3eme-dose.html'">
-                      <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/covid-19/vaccin.jpg');">
-                      </div>
-                      <div id="texte" class="py-2 px-3">
-                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
-                        <h5 class="text-uppercase my-2 my-md-3">Vaccination - 3ème dose</h5>
-                        <div id="date" class="text-center small pt-3 mb-3">
-                          <p>6 septembre 2021</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/covid-19/situation-sanitaire.html'">
-                      <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/covid-19/ile.jpg');">
-                      </div>
-                      <div id="texte" class="py-2 px-3">
-                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
-                        <h5 class="text-uppercase my-2 my-md-3">Situation sanitaire sur l'île</h5>
-                        <div id="date" class="text-center small pt-3 mb-3">
-                          <p>6 septembre 2021</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/covid-19/port-du-masque.html'">
-                      <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/covid-19/masque.jpg');">
-                      </div>
-                      <div id="texte" class="py-2 px-3">
-                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
-                        <h5 class="text-uppercase my-2 my-md-3">Port du masque obligatoire</h5>
-                        <div id="date" class="text-center small pt-3 mb-3">
-                          <p>26 août 2021</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/covid-19/communique.html'">
-                      <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/covid-19/communique.jpg');">
-                      </div>
-                      <div id="texte" class="py-2 px-3">
-                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
-                        <h5 class="text-uppercase my-2 my-md-3">Communiqué de la cellule COVID-19</h5>
-                        <div id="date" class="text-center small pt-3 mb-3">
-                          <p>14 avril 2021</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </section>
               <section id="actualites">
                 <h1 class="text-uppercase mb-3 text-center text-md-start">Actualités</h1>
                 <div id="une" class="row mt-4">
-                  <div id="photo" class="col-12 col-md-7 shadow" style="background-image: url(./img/articles/municipalite/communique-001.jpg);"></div>
+                  <div id="photo" class="col-12 col-md-7 shadow" style="background-image: url(../img/articles/municipalite/communique-001.jpg);"></div>
                   <div id="texte" class="col-12 col-md-5 mt-4 mt-md-0 p-4 shadow">
                     <div class="d-block h-100">
                       <div id="description" class="text-center text-md-start">
@@ -331,7 +240,7 @@
                         </div>
                       </div>
                       <div id="lien" class="text-end text-lg-center py-3 py-lg-2">
-                        <a href="articles/municipalite/communique-001.html">Lire l'article <i class="fa fa-caret-right px-2 pe-lg-0"></i></a>
+                        <a href="municipalite/communique-001.html">Lire l'article <i class="fa fa-caret-right px-2 pe-lg-0"></i></a>
                       </div>
                       <div id="informations" class="row pt-2 pt-md-0 align-items-center align-items-md-end">
                         <div id="categories" class="col-6">
@@ -349,9 +258,9 @@
                 </div>
                 <div id="recents" class="row mt-4 liste-article">
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/services/panne-benne.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './services/panne-benne.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/services/panne-benne.jpg');">
+                      style="background-image: url('../img/articles/services/panne-benne.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3">
                         <h6 class="mt-1"><span class="badge bg-warning">Services</span></h6>
@@ -363,9 +272,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/enquetes/algues-vertes.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './enquetes/algues-vertes.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/enquetes/algues-vertes.jpg');">
+                      style="background-image: url('../img/articles/enquetes/algues-vertes.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3">
                         <h6 class="mt-1"><span class="badge bg-info">Enquête publique</span></h6>
@@ -377,9 +286,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/municipalite/reunion-publique.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './municipalite/reunion-publique.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/municipalite/reunion-publique.jpg');">
+                      style="background-image: url('../img/articles/municipalite/reunion-publique.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3">
                         <h6 class="mt-1"><span class="badge bg-success">Municipalité</span></h6>
@@ -391,9 +300,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './articles/services/coupure-courant.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './services/coupure-courant.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/articles/services/coupure-courant.jpg');">
+                      style="background-image: url('../img/articles/services/coupure-courant.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3">
                         <h6 class="mt-1"><span class="badge bg-warning">Services</span></h6>
@@ -404,9 +313,62 @@
                       </div>
                     </article>
                   </div>
-                </div>
-                <div id="recents-plus" class="text-center mx-0 mx-sm-2 mx-md-4" onclick="document.location = './articles/index.html'">
-                  <i class="fa fa-plus-circle"></i>
+                  <div class="col-12 col-sm-6 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './covid-19/3eme-dose.html'">
+                      <div id="photo" class="w-100"
+                      style="background-image: url('../img/articles/covid-19/vaccin.jpg');">
+                      </div>
+                      <div id="texte" class="py-2 px-3">
+                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
+                        <h5 class="text-uppercase my-2 my-md-3">Vaccination - 3ème dose</h5>
+                        <div id="date" class="text-center small pt-3 mb-3">
+                          <p>6 septembre 2021</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './covid-19/situation-sanitaire.html'">
+                      <div id="photo" class="w-100"
+                      style="background-image: url('../img/articles/covid-19/ile.jpg');">
+                      </div>
+                      <div id="texte" class="py-2 px-3">
+                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
+                        <h5 class="text-uppercase my-2 my-md-3">Situation sanitaire sur l'île</h5>
+                        <div id="date" class="text-center small pt-3 mb-3">
+                          <p>6 septembre 2021</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './covid-19/port-du-masque.html'">
+                      <div id="photo" class="w-100"
+                      style="background-image: url('../img/articles/covid-19/masque.jpg');">
+                      </div>
+                      <div id="texte" class="py-2 px-3">
+                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
+                        <h5 class="text-uppercase my-2 my-md-3">Port du masque obligatoire</h5>
+                        <div id="date" class="text-center small pt-3 mb-3">
+                          <p>26 août 2021</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 pb-4">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './covid-19/communique.html'">
+                      <div id="photo" class="w-100"
+                      style="background-image: url('../img/articles/covid-19/communique.jpg');">
+                      </div>
+                      <div id="texte" class="py-2 px-3">
+                        <h6 class="mt-1"><span class="badge bg-danger">COVID-19</span></h6>
+                        <h5 class="text-uppercase my-2 my-md-3">Communiqué de la cellule COVID-19</h5>
+                        <div id="date" class="text-center small pt-3 mb-3">
+                          <p>14 avril 2021</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </section>
             </div>
@@ -431,7 +393,7 @@
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
                     <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/atelier-citrouilles.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/agenda/halloween.jpg');">
+                      style="background-image: url('../img/agenda/halloween.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
@@ -446,7 +408,7 @@
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
                     <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/film-documentaire.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/agenda/film-documentaire.jpg');">
+                      style="background-image: url('../img/agenda/film-documentaire.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Mois du film documentaire</h5>
@@ -461,7 +423,7 @@
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
                     <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/belote.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/agenda/belote.png');">
+                      style="background-image: url('../img/agenda/belote.png');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Concours de belote</h5>
@@ -476,7 +438,7 @@
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
                     <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/marche-noel.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('./img/agenda/noel.png');">
+                      style="background-image: url('../img/agenda/noel.png');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Marché de Noël</h5>
@@ -502,19 +464,19 @@
         <div id="liens" class="row mb-5">
           <div class="col-1"></div>
           <div class="col-2">
-            <a href="articles/index.html">Actualités</a>
+            <a href="index.html">Actualités</a>
           </div>
           <div class="col-2">
-            <a href="agendas/index.html">Agendas</a>
+            <a href="../agendas/index.html">Agendas</a>
           </div>
           <div class="col-2">
-            <a href="meteo/index.html">Météo</a>
+            <a href="../meteo/index.html">Météo</a>
           </div>
           <div class="col-2">
-            <a href="plan/index.html">Plan du site</a>
+            <a href="../plan/index.html">Plan du site</a>
           </div>
           <div class="col-2">
-            <a href="mentions-legales/index.html">Mentions légales</a>
+            <a href="../mentions-legales/index.html">Mentions légales</a>
           </div>
           <div class="col-1"></div>
         </div>
@@ -529,21 +491,21 @@
           <div class="col-4" id="commune">
             <figure class="figure">
               <a href="https://www.iledebrehat.fr/" target="_blank">
-                <img src="img/logos/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
+                <img src="../img/logos/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="departement">
             <figure class="figure">
               <a href="https://cotesdarmor.fr/" target="_blank">
-                <img src="img/logos/departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
+                <img src="../img/logos/departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="region">
             <figure class="figure">
               <a href="https://www.bretagne.bzh/" target="_blank">
-                <img src="img/logos/region.svg" alt="Bretagne" class="figure-img img-fluid">
+                <img src="../img/logos/region.svg" alt="Bretagne" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
@@ -558,11 +520,11 @@
     </main>
 
     <!-- MDB : JavaScript -->
-    <script type="text/javascript" src="lib/mdb/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/mdb/mdb.min.js"></script>
     <!-- Chart.js -->
-    <script type="text/javascript" src="lib/chart.min.js"></script>
+    <script type="text/javascript" src="../lib/chart.min.js"></script>
     <!-- Scripts -->
-    <script type="text/javascript" src="js/action.js"></script>
+    <script type="text/javascript" src="../js/action.js"></script>
     <script type="text/javascript">
 	
 	</script>
