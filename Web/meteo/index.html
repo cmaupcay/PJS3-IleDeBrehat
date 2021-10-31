@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Île-de-Bréhat - Municipalité - Communiqué du maire de l'Île-de-Bréhat</title>
+    <title>Île-de-Bréhat - Météo</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- Google Fonts : Roboto -->
@@ -13,11 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB : CSS -->
-    <link rel="stylesheet" href="../../lib/mdb/mdb.min.css" />
+    <link rel="stylesheet" href="../lib/mdb/mdb.min.css" />
     <!-- CSS personnel -->
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <link rel="shortcut icon" href="../../img/icone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icone.png" type="image/x-icon">
   </head>
   <body class="container-fluid">
 
@@ -26,7 +26,7 @@
         <div id="entete" class="row">
           <div class="col-10">
               <figure class="figure">
-                <img src="../../img/logos/ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
+                <img src="../img/logos/ligne.png" alt="Île-de-Bréhat" class="figure-img img-fluid">
               </figure>
           </div>
           <div class="col-2">
@@ -36,27 +36,27 @@
         <div id="menu" class="container-fluid">
           <div class="gap-2 d-grid">
             <!-- ACTUALITES -->
-            <button id="actualites" class="btn active" onclick="ouvrir_sous_menu('actualites')">
+            <button id="actualites" class="btn" onclick="ouvrir_sous_menu('actualites')">
               <i class="fas fa-newspaper me-2"></i>
               Actualités
             </button>
-            <div id="sm-actualites" class="sous-menu gap-1 my-2 mx-5 d-grid ouvert-v">
-              <button class="btn mb-3" onclick="document.location = '../../articles/covid-19/index.html'">
+            <div id="sm-actualites" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
+              <button class="btn mb-3" onclick="document.location = '../articles/covid-19/index.html'">
                 <i class="fa fa-exclamation-triangle me-2"></i>
                 COVID-19
               </button>
-              <button class="btn" onclick="document.location = '../../articles/enquetes/index.html'">Enquêtes publiques</button>
-              <button class="btn active" onclick="document.location = '../../articles/municipalite/index.html'">Municipalité</button>
-              <button class="btn" onclick="document.location = '../../articles/services/index.html'">Services</button>
+              <button class="btn" onclick="document.location = '../articles/enquetes/index.html'">Enquêtes publiques</button>
+              <button class="btn" onclick="document.location = '../articles/municipalite/index.html'">Municipalité</button>
+              <button class="btn" onclick="document.location = '../articles/services/index.html'">Services</button>
             </div>
             <!-- METEO -->
-            <button id="meteo" class="btn" onclick="ouvrir_sous_menu('meteo')">
+            <button id="meteo" class="btn active" onclick="ouvrir_sous_menu('meteo')">
               <i class="fas fa-sun me-2"></i>
               Météo
             </button>
-            <div id="sm-meteo" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../../meteo/index.html'">En direct</button>
-              <button class="btn" onclick="document.location = '../../meteo/marees.html'">Marées</button>
+            <div id="sm-meteo" class="sous-menu gap-1 my-2 mx-5 d-grid ouvert-v">
+              <button class="btn active" onclick="document.location = 'index.html'">En direct</button>
+              <button class="btn" onclick="document.location = 'marees.html'">Marées</button>
             </div>
             <!-- TRANSPORTS -->
             <button id="transports" class="btn" onclick="ouvrir_sous_menu('transports')">
@@ -64,9 +64,9 @@
               Transports
             </button>
             <div id="sm-transports" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../../transports/vedettes.html'">Vedettes</button>
-              <button class="btn" onclick="document.location = '../../transports/ports.html'">Ports</button>
-              <button class="btn" onclick="document.location = '../../transports/sur-l-ile.html'">Sur l'île</button>
+              <button class="btn" onclick="document.location = '../transports/vedettes.html'">Vedettes</button>
+              <button class="btn" onclick="document.location = '../transports/ports.html'">Ports</button>
+              <button class="btn" onclick="document.location = '../transports/sur-l-ile.html'">Sur l'île</button>
             </div>
             <!-- DEMARCHES -->
             <button id="demarches" class="btn" onclick="ouvrir_sous_menu('demarches')">
@@ -74,20 +74,20 @@
               Démarches
             </button>
             <div id="sm-demarches" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn mb-3" onclick="document.location = '../../demarches/paiement-en-ligne.html'">
+              <button class="btn mb-3" onclick="document.location = '../demarches/paiement-en-ligne.html'">
                 <i class="fa fa-credit-card me-2"></i>
                 Paiement en ligne
               </button>
-              <button class="btn" onclick="document.location = '../../demarches/etat-civil.html'">Etat civil</button>
-              <button class="btn" onclick="document.location = '../../demarches/papiers-d-identite.html'">Papiers d'identité</button>
-              <button class="btn" onclick="document.location = '../../demarches/urbanisme-et-plu.html'">Urbanisme & PLU</button>
-              <button class="btn" onclick="document.location = '../../demarches/taxe-de-sejour.html'">Taxe de séjour</button>
-              <button class="btn" onclick="document.location = '../../demarches/elections.html'">Elections</button>
-              <button class="btn" onclick="document.location = '../../demarches/mouillages.html'">Mouillages</button>
-              <button class="btn" onclick="document.location = '../../demarches/tarifs-communaux.html'">Tarifs communaux</button>
-              <button class="btn" onclick="document.location = '../../demarches/parking/l-arcouest.html.html'">Parking l'Arcouest</button>
-              <button class="btn" onclick="document.location = '../../demarches/vehicules.html'">Véhicules</button>
-              <button class="btn" onclick="document.location = '../../demarches/ecole-et-garderie.html'">Ecole & Garderie</button>
+              <button class="btn" onclick="document.location = '../demarches/etat-civil.html'">Etat civil</button>
+              <button class="btn" onclick="document.location = '../demarches/papiers-d-identite.html'">Papiers d'identité</button>
+              <button class="btn" onclick="document.location = '../demarches/urbanisme-et-plu.html'">Urbanisme & PLU</button>
+              <button class="btn" onclick="document.location = '../demarches/taxe-de-sejour.html'">Taxe de séjour</button>
+              <button class="btn" onclick="document.location = '../demarches/elections.html'">Elections</button>
+              <button class="btn" onclick="document.location = '../demarches/mouillages.html'">Mouillages</button>
+              <button class="btn" onclick="document.location = '../demarches/tarifs-communaux.html'">Tarifs communaux</button>
+              <button class="btn" onclick="document.location = '../demarches/parking/l-arcouest.html.html'">Parking l'Arcouest</button>
+              <button class="btn" onclick="document.location = '../demarches/vehicules.html'">Véhicules</button>
+              <button class="btn" onclick="document.location = '../demarches/ecole-et-garderie.html'">Ecole & Garderie</button>
             </div>
             <!-- SANTE -->
             <button id="sante" class="btn" onclick="ouvrir_sous_menu('sante')">
@@ -95,10 +95,10 @@
               Santé
             </button>
             <div id="sm-sante" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../../sante/cabinet/index.html'">Cabinet médical</button>
-              <button class="btn" onclick="document.location = '../../sante/ehpad/index.html'">EHPAD</button>
-              <button class="btn" onclick="document.location = '../../sante/cellule-covid/index.html'">Cellule COVID</button>
-              <button class="btn" onclick="document.location = '../../sante/transport-vsl/index.html'">Transport VSL</button>
+              <button class="btn" onclick="document.location = '../sante/cabinet/index.html'">Cabinet médical</button>
+              <button class="btn" onclick="document.location = '../sante/ehpad/index.html'">EHPAD</button>
+              <button class="btn" onclick="document.location = '../sante/cellule-covid/index.html'">Cellule COVID</button>
+              <button class="btn" onclick="document.location = '../sante/transport-vsl/index.html'">Transport VSL</button>
             </div>
             <!-- CULTURE -->
             <button id="culture" class="btn" onclick="ouvrir_sous_menu('culture')">
@@ -106,10 +106,10 @@
               Culture
             </button>
             <div id="sm-culture" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../../culture/office-tourisme/index.html'">Office du tourisme</button>
-              <button class="btn" onclick="document.location = '../../culture/activites/index.html'">Activités</button>
-              <button class="btn" onclick="document.location = '../../culture/histoire/index.html'">Histoire</button>
-              <button class="btn" onclick="document.location = '../../culture/patrimoine/index.html'">Patrimoine</button>
+              <button class="btn" onclick="document.location = '../culture/office-tourisme/index.html'">Office du tourisme</button>
+              <button class="btn" onclick="document.location = '../culture/activites/index.html'">Activités</button>
+              <button class="btn" onclick="document.location = '../culture/histoire/index.html'">Histoire</button>
+              <button class="btn" onclick="document.location = '../culture/patrimoine/index.html'">Patrimoine</button>
             </div>
             <!-- SERVICES -->
             <button id="services" class="btn" onclick="ouvrir_sous_menu('services')">
@@ -117,15 +117,15 @@
               Services
             </button>
             <div id="sm-services" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn mb-3" onclick="document.location = '../../services/brehat-infos/index.html'">
+              <button class="btn mb-3" onclick="document.location = '../services/brehat-infos/index.html'">
                 <i class="fa fa-book-reader me-2"></i>
                 Bréhat Infos
               </button>
-              <button class="btn" onclick="document.location = '../../services/dechets/index.html'">Gestion des déchets</button>
-              <button class="btn" onclick="document.location = '../../services/eau/index.html'">Gestion de l'eau</button>
-              <button class="btn" onclick="document.location = '../../services/techniques/index.html'">Services techniques</button>
-              <button class="btn" onclick="document.location = '../../services/pompiers/index.html'">Pompiers</button>
-              <button class="btn" onclick="document.location = '../../services/location-salles/index.html'">Location de salles</button>
+              <button class="btn" onclick="document.location = '../services/dechets/index.html'">Gestion des déchets</button>
+              <button class="btn" onclick="document.location = '../services/eau/index.html'">Gestion de l'eau</button>
+              <button class="btn" onclick="document.location = '../services/techniques/index.html'">Services techniques</button>
+              <button class="btn" onclick="document.location = '../services/pompiers/index.html'">Pompiers</button>
+              <button class="btn" onclick="document.location = '../services/location-salles/index.html'">Location de salles</button>
             </div>
             <!-- AGENDA -->
             <button id="agenda" class="btn">
@@ -138,9 +138,9 @@
               Statistiques
             </button>
             <div id="sm-stats" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../../stats/ventes/index.html'">Evolutions des ventes</button>
-              <button class="btn" onclick="document.location = '../../stats/habitudes/index.html'">Habitudes de consommation</button>
-              <button class="btn" onclick="document.location = '../../stats/demographie/index.html'">Démographie</button>
+              <button class="btn" onclick="document.location = '../stats/ventes/index.html'">Evolutions des ventes</button>
+              <button class="btn" onclick="document.location = '../stats/habitudes/index.html'">Habitudes de consommation</button>
+              <button class="btn" onclick="document.location = '../stats/demographie/index.html'">Démographie</button>
             </div>
           </div>
         </div>
@@ -171,10 +171,10 @@
                 Menu
               </button>  
             </div>
-            <div id="logo" class="col-md-6" onclick="window.location = '../../index.html'">
+            <div id="logo" class="col-md-6" onclick="window.location = '../index.html'">
             </div>
             <div class="col-md-3 col-6">
-              <button id="contact" class="btn" onclick="document.location = '../../contact/index.html'">
+              <button id="contact" class="btn" onclick="document.location = '../contact/index.html'">
                 <i class="fas fa-phone-square-alt me-2"></i>
                 Contact
               </button> 
@@ -183,14 +183,14 @@
         </div>
         <div id="logo-bureau" class="row">
           <div class="col-md-3 col-6"></div>
-              <div id="logo" class="col-md-6 text-center" onclick="window.location = '../../index.html'">
-                <img src="../../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
+              <div id="logo" class="col-md-6 text-center" onclick="window.location = '../index.html'">
+                <img src="../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
               </div>
           <div class="col-md-3 col-6"></div>
         </div>
         <div id="logo-mobile" class="row">
-          <div class="col-12 text-center" onclick="window.location = '../../index.html'">
-              <img src="../../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
+          <div class="col-12 text-center" onclick="window.location = '../index.html'">
+              <img src="../img/logos/principal.png" alt="Île-de-Bréhat" class="img-fluid">
           </div>
         </div>
       </header>
@@ -200,44 +200,15 @@
           <div class="row">
             <div class="col-0 col-sm-1"></div>
             <div class="col-12 col-sm-10">
-              <section id="article">
-                <div id="titre" class="row mb-4">
-                    <div class="col-12 col-md-10">
-                        <h1 class="text-uppercase text-center text-md-start mb-1">Communiqué du maire de l'Île-de-Bréhat</h1>
-                        <h5 class="text-muted font-italic">le 19 octobre 2021</h5>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <div id="categories" class="text-center text-md-end">
-                            <h4>
-                                <span class="badge bg-secondary mb-2">A la une</span>
-                                <span class="badge bg-success">Municipalité</span>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div id="texte" class="row mb-3">
-                    <p>
-                        Madame, Monsieur,
-                        <br>
-                        <br>
-                        Pour améliorer le transport en commun de l’île j’ai autorisé, par convention, la société dite du “Petit Train” à utiliser une voiture électrique. Ce véhicule doit être utilisé alternativement avec le tracteur mais pas conjointement, sauf circonstances particulières. L’opposition du conseil municipal a critiqué cette démarche.
-                        <br>
-                        <br>
-                        Lors du conseil municipal du 5 Octobre 2021, lors des questions diverses, un conseiller municipal d’opposition a affirmé qu’il avait constaté, le 2 octobre 2021, au niveau de Kerano, que la voiture électrique opérait simultanément avec le tracteur.
-                        <br>
-                        <br>
-                        Suite à ces propos, j’ai fait procéder à une enquête.
-                        <br>
-                        <br>
-                        Or il ressort de la confrontation des points de vues, des preuves apportées par les représentants de la société du “Petit Train” et des différents témoignages que cette affirmation était erronée et peut être qualifiée d’ “infox”.
-                        <br>
-                        <br>
-                        L’opposition est en droit de contester mes décisions ou celles de la majorité. Cela relève du fonctionnement normal de la démocratie. Mais utiliser une “infox” pour décrédibiliser notre action, ou celle d’une entreprise Bréhatine, révèle une conception du débat pour le moins douteuse que mes collègues de la majorité et moi-même ne partageons pas.
-                        <br>
-                        <br>
-                        Le Maire,<br>
-                        Olivier CARRÉ
-                    </p>
+              <section id="meteo">
+                <h1 class="text-uppercase mb-3 text-center text-md-start">Météo</h1>
+                <div id="visualisation" class="container-fluid mb-3">
+                    <iframe
+                        src="https://embed.windy.com/embed2.html?lat=48.862&amp;lon=-2.993&amp;detailLat=48.862&amp;detailLon=-2.993&amp;width=650&amp;height=550&amp;zoom=11&amp;level=surface&amp;overlay=temp&amp;product=ecmwf&amp;menu=&amp;message=&amp;marker=true&amp;calendar=now&amp;pressure=&amp;type=map&amp;location=coordinates&amp;detail=&amp;metricWind=default&amp;metricTemp=default&amp;radarRange=-1"
+                        class="w-100"
+                        style="height: 77vh;"
+                        frameborder="0"
+                    ></iframe>
                 </div>
               </section>
             </div>
@@ -260,9 +231,9 @@
                 <h1 class="text-uppercase mb-3 text-center text-md-start">Agenda</h1>
                 <div id="prochainement" class="row mt-4 mt-md-4 liste-article">
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = '../agenda/atelier-citrouilles.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/atelier-citrouilles.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('../../img/agenda/halloween.jpg');">
+                      style="background-image: url('../img/agenda/halloween.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Atelier Citrouilles</h5>
@@ -275,9 +246,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = '../agenda/film-documentaire.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/film-documentaire.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('../../img/agenda/film-documentaire.jpg');">
+                      style="background-image: url('../img/agenda/film-documentaire.jpg');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Mois du film documentaire</h5>
@@ -290,9 +261,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = '../agenda/belote.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/belote.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('../../img/agenda/belote.png');">
+                      style="background-image: url('../img/agenda/belote.png');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Concours de belote</h5>
@@ -305,9 +276,9 @@
                     </article>
                   </div>
                   <div class="col-12 col-sm-6 col-md-3 pb-4">
-                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = '../agenda/marche-noel.html'">
+                    <article class="m-1 m-sm-2 d-table-cell shadow" onclick="document.location = './agenda/marche-noel.html'">
                       <div id="photo" class="w-100"
-                      style="background-image: url('../../img/agenda/noel.png');">
+                      style="background-image: url('../img/agenda/noel.png');">
                       </div>
                       <div id="texte" class="py-2 px-3 text-center">
                         <h5 class="text-uppercase my-2 my-md-3">Marché de Noël</h5>
@@ -320,7 +291,7 @@
                     </article>
                   </div>
                 </div>
-                <div id="recents-plus" class="text-center mx-0 mx-sm-2 mx-md-4 mb-8" onclick="document.location = '../agenda/index.html'">
+                <div id="recents-plus" class="text-center mx-0 mx-sm-2 mx-md-4 mb-8" onclick="document.location = './agenda/index.html'">
                   <i class="fa fa-plus-circle"></i>
                 </div>
               </section>
@@ -333,19 +304,19 @@
         <div id="liens" class="row mb-5">
           <div class="col-1"></div>
           <div class="col-2">
-            <a href="../index.html">Actualités</a>
+            <a href="../articles/index.html">Actualités</a>
           </div>
           <div class="col-2">
-            <a href="../../agendas/index.html">Agendas</a>
+            <a href="../agendas/index.html">Agendas</a>
           </div>
           <div class="col-2">
-            <a href="../../meteo/index.html">Météo</a>
+            <a href="index.html">Météo</a>
           </div>
           <div class="col-2">
-            <a href="../../plan/index.html">Plan du site</a>
+            <a href="../plan/index.html">Plan du site</a>
           </div>
           <div class="col-2">
-            <a href="../../mentions-legales/index.html">Mentions légales</a>
+            <a href="../mentions-legales/index.html">Mentions légales</a>
           </div>
           <div class="col-1"></div>
         </div>
@@ -360,21 +331,21 @@
           <div class="col-4" id="commune">
             <figure class="figure">
               <a href="https://www.iledebrehat.fr/" target="_blank">
-                <img src="../../img/logos/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
+                <img src="../img/logos/blason.svg" alt="Île-de-Bréhat" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="departement">
             <figure class="figure">
               <a href="https://cotesdarmor.fr/" target="_blank">
-                <img src="../../img/logos/departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
+                <img src="../img/logos/departement.svg" alt="Côtes-d'Armor" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
           <div class="col-4" id="region">
             <figure class="figure">
               <a href="https://www.bretagne.bzh/" target="_blank">
-                <img src="../../img/logos/region.svg" alt="Bretagne" class="figure-img img-fluid">
+                <img src="../img/logos/region.svg" alt="Bretagne" class="figure-img img-fluid">
               </a>
             </figure>
           </div>
@@ -389,11 +360,11 @@
     </main>
 
     <!-- MDB : JavaScript -->
-    <script type="text/javascript" src="../../lib/mdb/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/mdb/mdb.min.js"></script>
     <!-- Chart.js -->
-    <script type="text/javascript" src="../../lib/chart.min.js"></script>
+    <script type="text/javascript" src="../lib/chart.min.js"></script>
     <!-- Scripts -->
-    <script type="text/javascript" src="../../js/action.js"></script>
+    <script type="text/javascript" src="../js/action.js"></script>
     <script type="text/javascript">
 	
 	</script>
