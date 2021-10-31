@@ -244,6 +244,13 @@ main#page div#contenu
     z-index: 1;
 }
 /* COMMUN */
+main#page section#article div#photo
+{ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
 main#page section article
 {
     background-color: var(--idb-nav-fond);

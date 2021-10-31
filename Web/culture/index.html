@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Île-de-Bréhat - Contact</title>
+    <title>Île-de-Bréhat - Culture</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- Google Fonts : Roboto -->
@@ -101,15 +101,15 @@
               <button class="btn" onclick="document.location = '../sante/transport-vsl/index.html'">Transport VSL</button>
             </div>
             <!-- CULTURE -->
-            <button id="culture" class="btn" onclick="ouvrir_sous_menu('culture')">
+            <button id="culture" class="btn active" onclick="ouvrir_sous_menu('culture')">
               <i class="fas fa-theater-masks me-2"></i>
               Culture
             </button>
-            <div id="sm-culture" class="sous-menu gap-1 my-2 mx-5 d-grid ferme-v">
-              <button class="btn" onclick="document.location = '../culture/office-tourisme/index.html'">Office du tourisme</button>
-              <button class="btn" onclick="document.location = '../culture/activites/index.html'">Activités</button>
-              <button class="btn" onclick="document.location = '../culture/histoire/index.html'">Histoire</button>
-              <button class="btn" onclick="document.location = '../culture/patrimoine/index.html'">Patrimoine</button>
+            <div id="sm-culture" class="sous-menu gap-1 my-2 mx-5 d-grid ouvert-v">
+              <button class="btn" onclick="document.location = 'office-tourisme/index.html'">Office du tourisme</button>
+              <button class="btn" onclick="document.location = 'activites/index.html'">Activités</button>
+              <button class="btn" onclick="document.location = 'histoire/index.html'">Histoire</button>
+              <button class="btn" onclick="document.location = 'patrimoine/index.html'">Patrimoine</button>
             </div>
             <!-- SERVICES -->
             <button id="services" class="btn" onclick="ouvrir_sous_menu('services')">
@@ -174,7 +174,7 @@
             <div id="logo" class="col-md-6" onclick="window.location = '../index.html'">
             </div>
             <div class="col-md-3 col-6">
-              <button id="contact" class="btn active" onclick="document.location = '../contact/index.html'">
+              <button id="contact" class="btn" onclick="document.location = '../contact/index.html'">
                 <i class="fas fa-phone-square-alt me-2"></i>
                 Contact
               </button> 
@@ -194,78 +194,37 @@
           </div>
         </div>
       </header>
-      <div id="en-avant" class="container-fluid degrade-fond"></div>
-      <div id="contenu" class="container-fluid plein">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-0 col-sm-1"></div>
-            <div class="col-12 col-sm-10">
-              <section id="contact">
-                <h1 class="text-uppercase mb-3 text-center text-md-start">Contact</h1>
-                <div class="row mb-3">
-                    <div class="col-12 col-md-6">
-                        <h2 class="text-center text-md-start mb-3">Horaires</h2>
-                        <div class="text-center">
-                            <h6>Lundi, Mardi & Vendredi</h6>
-                            <p><b>de 9h à 12h</b> et <b>de 14h à 16h</b></p>
-                            <h6>Mercredi & Jeudi</h6>
-                            <p><b>de 9h à 12h</b></p>
-                            <h6>Samedi & Dimanche</h6>
-                            <p class="text-danger"><b>Fermée</b></p>
-                        </div>
+      <div id="en-avant" class="container-fluid">
+        <div class="row">
+          <div class="col-0 col-sm-1 col-md-2"></div>
+          <div class="col-12 col-sm-10 col-md-8 text-center">
+            <div id="menu" class="shadow">
+                <h1 class="text-center strong text-uppercase user-select-none">
+                    <i class="fas fa-theater-masks me-2"></i>
+                    Culture
+                </h1>
+                <div id="acces-rapides" class="row">
+                    <div class="acces-rapide col-12 col-sm-6 col-md-3 d-lg-table-cell"  onclick="window.location = 'office-tourisme/index.html'">
+                    <div class="icone"><i class="fas fa-info-circle"></i></div>
+                    <h5>Office du tourisme</h5>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <h2 class="text-center text-md-start mb-3">Numéros</h2>
-                        <button id="tel" class="btn" onclick="window.location = 'tel:0296200036'">
-                          <i class="fa fa-phone me-2"></i>
-                          02 96 20 00 36
-                        </button>
-                        <div class="text-center mt-4">
-                            <h6>Hors heures d'ouvertures</h6>
-                            <button id="tel" class="btn" onclick="window.location = 'tel:0617415817'">
-                              <i class="fa fa-phone me-2"></i>
-                              06 17 41 58 17
-                            </button>
-                            <span class="text-danger small font-italic">en cas d'urgence uniquement</span>
-                        </div>
+                    <div class="acces-rapide col-12 col-sm-6 col-md-3 d-lg-table-cell"  onclick="window.location = 'activites/index.html'">
+                    <div class="icone"><i class="fas fa-microphone"></i></div>
+                    <h5>Activités</h5>
                     </div>
-                    <div class="col-12">
-                        <h2 class="text-center text-md-start mt-5 mb-3">Message</h2>
-                        <form id="form-message">
-                            <div class="form-outline mb-3">
-                                <input type="text" id="nom" class="form-control" required>
-                                <label for="nom" class="form-label">Nom</label>
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-outline mb-3">
-                                        <input type="email" id="email" class="form-control" required>
-                                        <label for="email" class="form-label">Adresse email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-outline mb-3">
-                                        <input type="tel" id="tel" class="form-control" required>
-                                        <label for="tel" class="form-label">Numéro de téléphone</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-outline mb-4">
-                                <textarea class="form-control" id="message" rows="4" required style="resize: none;"></textarea>
-                                <label for="message" class="form-label">Message</label>
-                            </div>
-                            <button type="submit" class="btn">Envoyer</button>
-                        </form>
+                    <div class="acces-rapide col-12 col-sm-6 col-md-3 d-lg-table-cell"  onclick="window.location = 'histoire/index.html'">
+                    <div class="icone"><i class="fas fa-book-open"></i></div>
+                    <h5>Histoire</h5>
+                    </div>
+                    <div class="acces-rapide col-12 col-sm-6 col-md-3 d-lg-table-cell"  onclick="window.location = 'patrimoine/index.html'">
+                    <div class="icone"><i class="fas fa-church"></i></div>
+                    <h5>Patrimoine</h5>
                     </div>
                 </div>
-              </section>
             </div>
-            <div class="col-0 col-sm-1"></div>
           </div>
+          <div class="col-0 col-sm-1 col-md-2"></div>
         </div>
-      </div>
-      <div id="espace">
-        <div class="degrade-fond-inverse"></div>
       </div>
       <div id="espace">
         <div class="degrade-fond"></div>
